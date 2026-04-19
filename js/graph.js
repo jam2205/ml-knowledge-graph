@@ -11,13 +11,47 @@ const CATEGORY_SATURATION_STEPS = [0.84, 0.9, 0.87, 0.92];
 const CATEGORY_LIGHTNESS_STEPS = [0.6, 0.56, 0.64, 0.58, 0.62];
 const DEFAULT_CATEGORY_COLOR = { h: 0.54, s: 0.78, l: 0.58 };
 
+// --- Pipeline layer fixed colours (override auto-hue for forex pipeline graph) ---
+// Bronze=#CD7F32  Silver=#A8B8C8  Gold=#FFD700  Scheduler=#6B9BD2
+// Gate=#E8734A    Model=#9B59B6   Meta=#E74C3C  RAG=#1ABC9C
+const PIPELINE_CATEGORY_HEX = {
+  'Bronze':    '#CD7F32',
+  'Silver':    '#A8B8C8',
+  'Gold':      '#FFD700',
+  'Scheduler': '#6B9BD2',
+  'Gate':      '#E8734A',
+  'Model':     '#9B59B6',
+  'Meta':      '#E74C3C',
+  'RAG':       '#1ABC9C',
+};
+
+function hexToHsl(hex) {
+  const r = parseInt(hex.slice(1,3),16)/255;
+  const g = parseInt(hex.slice(3,5),16)/255;
+  const b = parseInt(hex.slice(5,7),16)/255;
+  const max = Math.max(r,g,b), min = Math.min(r,g,b);
+  let h=0, s=0, l=(max+min)/2;
+  if (max !== min) {
+    const d = max - min;
+    s = l > 0.5 ? d/(2-max-min) : d/(max+min);
+    switch(max){
+      case r: h=((g-b)/d+(g<b?6:0))/6; break;
+      case g: h=((b-r)/d+2)/6; break;
+      case b: h=((r-g)/d+4)/6; break;
+    }
+  }
+  return { h, s, l };
+}
+
 export function getCategoryColor(category) {
+  if (PIPELINE_CATEGORY_HEX[category]) return hexToHsl(PIPELINE_CATEGORY_HEX[category]);
   const color = categoryColorMap.get(category);
   if (color) return color;
   return DEFAULT_CATEGORY_COLOR; // fallback for unknown
 }
 
 export function getCategoryColorHex(category) {
+  if (PIPELINE_CATEGORY_HEX[category]) return PIPELINE_CATEGORY_HEX[category];
   const { h, s, l } = getCategoryColor(category);
   return hslToHex(h, s, l);
 }

@@ -1192,6 +1192,33 @@ export function setDeterministicMode(enabled) {
   controls.update();
 }
 
+export function clearScene() {
+  if (opaqueNodeMesh) {
+    scene.remove(opaqueNodeMesh);
+    opaqueNodeMesh.geometry.dispose();
+    opaqueNodeMesh.material.dispose();
+    opaqueNodeMesh = null;
+  }
+  if (transparentNodeMesh) {
+    scene.remove(transparentNodeMesh);
+    transparentNodeMesh.geometry.dispose();
+    transparentNodeMesh.material.dispose();
+    transparentNodeMesh = null;
+  }
+  if (edgeLines) {
+    scene.remove(edgeLines);
+    edgeLines.geometry.dispose();
+    edgeLines.material.dispose();
+    edgeLines = null;
+  }
+  if (edgeArrows) {
+    scene.remove(edgeArrows);
+    edgeArrows.geometry.dispose();
+    edgeArrows.material.dispose();
+    edgeArrows = null;
+  }
+}
+
 export function getCameraState() {
   if (!camera || !controls) {
     return null;

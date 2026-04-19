@@ -169,6 +169,36 @@ body {
 #search:focus { border-color: rgba(255, 255, 255, 0.3); }
 #search::placeholder { color: #666; }
 
+#graph-source-selector {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+
+#graph-source-select {
+  height: 32px;
+  min-width: 140px;
+  padding: 0 10px;
+  background: #1a1f3a;
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  border-radius: 6px;
+  color: #FFD700;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+#graph-source-select:focus {
+  border-color: rgba(255, 215, 0, 0.7);
+}
+
+#graph-source-select option {
+  background: #111420;
+  color: #e0e0e0;
+}
+
 #layout-selector {
   display: flex;
   align-items: center;

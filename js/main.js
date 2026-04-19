@@ -271,6 +271,32 @@ async function init() {
   UI.setupSearch(handleSearch);
   UI.setupLayoutSelector(handleLayoutChange);
   UI.setupAutoRotate((enabled) => Renderer.setAutoRotate(enabled));
+
+  // Graph source selector (ML Concepts ↔ Forex Pipeline)
+  const graphSourceSelect = document.getElementById('graph-source-select');
+  if (graphSourceSelect) {
+    graphSourceSelect.addEventListener('change', async (e) => {
+      const src = e.target.value;
+      try {
+        graph = await loadGraph('./' + src);
+        metricRangeMap = computeMetricRanges(graph.nodes);
+        cacheDefaultNodeScales(graph.nodes);
+        Renderer.clearScene();
+        Renderer.createNodes(graph.nodes);
+        Renderer.createEdges(graph.edges);
+        const layout = computeForceLayout(graph.nodes, graph.edges);
+        applyPositions(layout);
+        Renderer.updatePositions();
+        applyAmbientGraphStyle();
+        Renderer.fitCameraToGraph();
+        UI.updateStats(graph.nodes.length, graph.edges.length);
+        UI.setupLegend(getSortedCategories(), getCategoryColorHex, handleCategoryClick);
+        handleEmptyClick();
+      } catch (err) {
+        console.error('Failed to load graph:', src, err);
+      }
+    });
+  }
   UI.setupSettingsPanel();
   UI.setupNodeColoring(handleNodeColoringModeChange);
   UI.setupNodeSizing(handleNodeSizingModeChange);
