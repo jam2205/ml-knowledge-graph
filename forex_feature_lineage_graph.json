@@ -1,0 +1,1390 @@
+[
+  {
+    "id": "fa2a6df1",
+    "label": "raw_price_data",
+    "category": "Bronze",
+    "definition": "27 forex pairs × 5 timeframes (1h/4h/1day/1week/1month). Primary OHLCV source for all price-based feature extraction.\n\n**Live BQ stats** (as of 2026-04-21 12:08 UTC): 10,335,096 rows · 19 columns",
+    "long_description": "## raw_price_data\n\n**Layer:** Bronze\n\n**Rows:** 10,335,096  |  **Columns:** 19  |  **Last modified:** 2026-04-21 12:08 UTC\n\n27 forex pairs × 5 timeframes (1h/4h/1day/1week/1month). Primary OHLCV source for all price-based feature extraction.\n",
+    "to": [
+      "56ec2317",
+      "99d77920",
+      "c4b79f41",
+      "020eb2c0",
+      "f7d1d6a1"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.08928571428571429,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 10335096,
+    "_bq_cols": 19,
+    "_bq_modified": "2026-04-21 12:08 UTC"
+  },
+  {
+    "id": "85121d4b",
+    "label": "cot_data",
+    "category": "Bronze",
+    "definition": "CFTC Legacy COT weekly. Net commercial + non-commercial long/short/OI percentiles for 7 major currency futures. Updated Saturday 16:00 UTC.\n\n**Live BQ stats** (as of 2026-04-19 04:52 UTC): 6,459 rows · 14 columns",
+    "long_description": "## cot_data\n\n**Layer:** Bronze\n\n**Rows:** 6,459  |  **Columns:** 14  |  **Last modified:** 2026-04-19 04:52 UTC\n\nCFTC Legacy COT weekly. Net commercial + non-commercial long/short/OI percentiles for 7 major currency futures. Updated Saturday 16:00 UTC.\n",
+    "to": [
+      "82c8f986",
+      "2a086509"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 6459,
+    "_bq_cols": 14,
+    "_bq_modified": "2026-04-19 04:52 UTC"
+  },
+  {
+    "id": "c9cd0bff",
+    "label": "world_bond_yields",
+    "category": "Bronze",
+    "definition": "41-column daily yield table: US 2/5/10/30y, real yield, spreads, DE/CA/JP/AU 2/5y, GB/NZ/CH 3m.\n\n**Live BQ stats** (as of 2026-04-21 07:01 UTC): 7,051 rows · 41 columns",
+    "long_description": "## world_bond_yields\n\n**Layer:** Bronze\n\n**Rows:** 7,051  |  **Columns:** 41  |  **Last modified:** 2026-04-21 07:01 UTC\n\n41-column daily yield table: US 2/5/10/30y, real yield, spreads, DE/CA/JP/AU 2/5y, GB/NZ/CH 3m.\n",
+    "to": [
+      "f504277c"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 7051,
+    "_bq_cols": 41,
+    "_bq_modified": "2026-04-21 07:01 UTC"
+  },
+  {
+    "id": "4425a2ba",
+    "label": "global_macro_data",
+    "category": "Bronze",
+    "definition": "11-column daily macro: US GDP/CPI/unemployment, fed_funds_rate, DXY, VIX, gold, oil, copper, GSCI.\n\n**Live BQ stats** (as of 2026-04-21 07:15 UTC): 3,664 rows · 13 columns",
+    "long_description": "## global_macro_data\n\n**Layer:** Bronze\n\n**Rows:** 3,664  |  **Columns:** 13  |  **Last modified:** 2026-04-21 07:15 UTC\n\n11-column daily macro: US GDP/CPI/unemployment, fed_funds_rate, DXY, VIX, gold, oil, copper, GSCI.\n",
+    "to": [
+      "f504277c"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 3664,
+    "_bq_cols": 13,
+    "_bq_modified": "2026-04-21 07:15 UTC"
+  },
+  {
+    "id": "5797257d",
+    "label": "forex_factory_calendar",
+    "category": "Bronze",
+    "definition": "Economic event calendar: FOMC/CPI/NFP/PCE/GDP/retail/PPI flags. Drives weekly event impact profiles per currency.\n\n**Live BQ stats** (as of 2026-04-13 04:24 UTC): 5,012 rows · 9 columns",
+    "long_description": "## forex_factory_calendar\n\n**Layer:** Bronze\n\n**Rows:** 5,012  |  **Columns:** 9  |  **Last modified:** 2026-04-13 04:24 UTC\n\nEconomic event calendar: FOMC/CPI/NFP/PCE/GDP/retail/PPI flags. Drives weekly event impact profiles per currency.\n",
+    "to": [
+      "f504277c"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 5012,
+    "_bq_cols": 9,
+    "_bq_modified": "2026-04-13 04:24 UTC"
+  },
+  {
+    "id": "588169c5",
+    "label": "central_bank_rates",
+    "category": "Bronze",
+    "definition": "Daily central bank policy rates. Basis for carry trade differential calculation across 17 cross pairs.\n\n**Live BQ stats** (as of 2026-03-26 02:07 UTC): 6,310 rows · 21 columns",
+    "long_description": "## central_bank_rates\n\n**Layer:** Bronze\n\n**Rows:** 6,310  |  **Columns:** 21  |  **Last modified:** 2026-03-26 02:07 UTC\n\nDaily central bank policy rates. Basis for carry trade differential calculation across 17 cross pairs.\n",
+    "to": [
+      "7c2e0594"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 6310,
+    "_bq_cols": 21,
+    "_bq_modified": "2026-03-26 02:07 UTC"
+  },
+  {
+    "id": "82c8a6e8",
+    "label": "cme_futures_volume",
+    "category": "Bronze",
+    "definition": "CME currency futures daily volume + settlement. Builds volume_ratio and volume_zscore (vs 20d average).\n\n**Live BQ stats** (as of 2026-04-14 22:15 UTC): 75,160 rows · 4 columns",
+    "long_description": "## cme_futures_volume\n\n**Layer:** Bronze\n\n**Rows:** 75,160  |  **Columns:** 4  |  **Last modified:** 2026-04-14 22:15 UTC\n\nCME currency futures daily volume + settlement. Builds volume_ratio and volume_zscore (vs 20d average).\n",
+    "to": [
+      "f504277c"
+    ],
+    "from": [],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 75160,
+    "_bq_cols": 4,
+    "_bq_modified": "2026-04-14 22:15 UTC"
+  },
+  {
+    "id": "56ec2317",
+    "label": "1h Bars (OHLCV)",
+    "category": "Timeframe",
+    "definition": "1-hour OHLCV bars. Primary ML input timeframe (SEQ_LEN=60 for Keras CNN). Drives session extraction, ICT structure, Williams %R, ATR coiling, VWAP. 27 pairs 2007→present.",
+    "long_description": "## 1h Bars (OHLCV)\n\n**Layer:** Timeframe\n\n1-hour OHLCV bars. Primary ML input timeframe (SEQ_LEN=60 for Keras CNN). Drives session extraction, ICT structure, Williams %R, ATR coiling, VWAP. 27 pairs 2007→present.\n\n**Resolution:** Stored in raw_price_data BQ table with timeframe discriminator column.\n",
+    "to": [
+      "9fa76d4e",
+      "d4a22e31",
+      "e77b8c51",
+      "89def822",
+      "f6892e82",
+      "50e4508b",
+      "77d462cf",
+      "bddecb7b"
+    ],
+    "from": [
+      "fa2a6df1"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.14285714285714285,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Timeframe",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "99d77920",
+    "label": "4h Bars (OHLCV)",
+    "category": "Timeframe",
+    "definition": "4-hour OHLCV bars. Used by silver_smart_money for multi-timeframe ICT structure: 4h BOS, CHoCH, swing highs/lows, Order Block and FVG identification. MTF join in ml_ready.",
+    "long_description": "## 4h Bars (OHLCV)\n\n**Layer:** Timeframe\n\n4-hour OHLCV bars. Used by silver_smart_money for multi-timeframe ICT structure: 4h BOS, CHoCH, swing highs/lows, Order Block and FVG identification. MTF join in ml_ready.\n\n**Resolution:** Stored in raw_price_data BQ table with timeframe discriminator column.\n",
+    "to": [
+      "2eed9293",
+      "842eff26",
+      "d8e78009"
+    ],
+    "from": [
+      "fa2a6df1"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.05357142857142857,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Timeframe",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "c4b79f41",
+    "label": "Daily Bars (OHLCV)",
+    "category": "Timeframe",
+    "definition": "Daily OHLCV bars. ADR and DDR calculation basis. True daily high/low for session_ranges sweep counts. Seasonal bias anchor. Asia/CBDR body ranges extracted at daily granularity.",
+    "long_description": "## Daily Bars (OHLCV)\n\n**Layer:** Timeframe\n\nDaily OHLCV bars. ADR and DDR calculation basis. True daily high/low for session_ranges sweep counts. Seasonal bias anchor. Asia/CBDR body ranges extracted at daily granularity.\n\n**Resolution:** Stored in raw_price_data BQ table with timeframe discriminator column.\n",
+    "to": [
+      "9fa76d4e",
+      "d4a22e31",
+      "07db4ac6",
+      "19be692d",
+      "f6892e82",
+      "50e4508b",
+      "77d462cf"
+    ],
+    "from": [
+      "fa2a6df1"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.125,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Timeframe",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "020eb2c0",
+    "label": "Weekly Bars (OHLCV)",
+    "category": "Timeframe",
+    "definition": "Weekly OHLCV bars. Weekly state features: prior Friday close position, weekly_bias, weekly_range vs ADR. COT weekly alignment. Presidential cycle week number.",
+    "long_description": "## Weekly Bars (OHLCV)\n\n**Layer:** Timeframe\n\nWeekly OHLCV bars. Weekly state features: prior Friday close position, weekly_bias, weekly_range vs ADR. COT weekly alignment. Presidential cycle week number.\n\n**Resolution:** Stored in raw_price_data BQ table with timeframe discriminator column.\n",
+    "to": [
+      "e19fa96a",
+      "19be692d",
+      "d3c6f617"
+    ],
+    "from": [
+      "fa2a6df1"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.05357142857142857,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Timeframe",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "f7d1d6a1",
+    "label": "Monthly Bars (OHLCV)",
+    "category": "Timeframe",
+    "definition": "Monthly OHLCV bars. Seasonal and presidential cycle bias. Monthly close position for macro regime context. seasonal_biases table reference month.",
+    "long_description": "## Monthly Bars (OHLCV)\n\n**Layer:** Timeframe\n\nMonthly OHLCV bars. Seasonal and presidential cycle bias. Monthly close position for macro regime context. seasonal_biases table reference month.\n\n**Resolution:** Stored in raw_price_data BQ table with timeframe discriminator column.\n",
+    "to": [
+      "19be692d"
+    ],
+    "from": [
+      "fa2a6df1"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Timeframe",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "9fa76d4e",
+    "label": "Asia Session\n20:00–00:00 NY",
+    "category": "Session",
+    "definition": "Asia session body range (GREATEST/LEAST of open/close, 20:00–23:59 NY). ICT accumulation zone. When asia_raw ≤ 35 pips → daily anchor. Weekly persistence: LAST_VALUE IGNORE NULLS within WEEK(FRIDAY). Tracked in silver_session_ranges.",
+    "long_description": "## Asia Session 20:00–00:00 NY\n\n**Layer:** Session\n\nAsia session body range (GREATEST/LEAST of open/close, 20:00–23:59 NY). ICT accumulation zone. When asia_raw ≤ 35 pips → daily anchor. Weekly persistence: LAST_VALUE IGNORE NULLS within WEEK(FRIDAY). Tracked in silver_session_ranges.\n\n**ICT concept:** Session window extracted from 1h bars using NY timezone conversion.\n",
+    "to": [
+      "4df7e808",
+      "852d3625"
+    ],
+    "from": [
+      "56ec2317",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Session",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "d4a22e31",
+    "label": "CBDR\n14:00–20:00 NY",
+    "category": "Session",
+    "definition": "Central Bank Dealing Range. Body candles 14:00–20:00 NY. Fallback anchor when Asia > 35 pips and cbdr_pips ≤ 40. cbdr_pips and cbdr_valid flow directly into ml_ready and chronos_input. Primary manipulation session.",
+    "long_description": "## CBDR 14:00–20:00 NY\n\n**Layer:** Session\n\nCentral Bank Dealing Range. Body candles 14:00–20:00 NY. Fallback anchor when Asia > 35 pips and cbdr_pips ≤ 40. cbdr_pips and cbdr_valid flow directly into ml_ready and chronos_input. Primary manipulation session.\n\n**ICT concept:** Session window extracted from 1h bars using NY timezone conversion.\n",
+    "to": [
+      "7d059f48",
+      "852d3625",
+      "07db4ac6"
+    ],
+    "from": [
+      "56ec2317",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.05357142857142857,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Session",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "e77b8c51",
+    "label": "London Open\n02:00–05:00 NY",
+    "category": "Session",
+    "definition": "London Open session. is_london flag in session_labels. Stop hunts above Asia high common before NY delivery. 4h BOS/CHoCH often forms here. MTF ICT structure detected during this window.",
+    "long_description": "## London Open 02:00–05:00 NY\n\n**Layer:** Session\n\nLondon Open session. is_london flag in session_labels. Stop hunts above Asia high common before NY delivery. 4h BOS/CHoCH often forms here. MTF ICT structure detected during this window.\n\n**ICT concept:** Session window extracted from 1h bars using NY timezone conversion.\n",
+    "to": [
+      "7d059f48",
+      "2eed9293"
+    ],
+    "from": [
+      "56ec2317"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Session",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "89def822",
+    "label": "NY Open\n08:30–11:00 NY",
+    "category": "Session",
+    "definition": "New York AM session. Primary STDV delivery window. is_ny flag in session_labels. Main window for tgt_hi/tgt_lo hits. Silver Bullet time window (09:50–11:00) nested inside this session.",
+    "long_description": "## NY Open 08:30–11:00 NY\n\n**Layer:** Session\n\nNew York AM session. Primary STDV delivery window. is_ny flag in session_labels. Main window for tgt_hi/tgt_lo hits. Silver Bullet time window (09:50–11:00) nested inside this session.\n\n**ICT concept:** Session window extracted from 1h bars using NY timezone conversion.\n",
+    "to": [
+      "1b6fc36c",
+      "2eed9293"
+    ],
+    "from": [
+      "56ec2317"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Session",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "bd10b440",
+    "label": "NY PM\n13:00–16:00 NY\n(planned)",
+    "category": "Planned",
+    "definition": "New York PM session. Not yet explicitly tracked. Relevant for late-day distribution and reversals into Asia open. Planned as separate session flag in silver_smart_money.",
+    "long_description": "## NY PM 13:00–16:00 NY (planned)\n\n**Layer:** Planned\n\nNew York PM session. Not yet explicitly tracked. Relevant for late-day distribution and reversals into Asia open. Planned as separate session flag in silver_smart_money.\n\n**Status:** Not yet built. Included to show future pipeline direction.\n",
+    "to": [],
+    "from": [],
+    "_pagerank": 0.002,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Planned",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "5d7d015a",
+    "label": "Silver Bullet\n09:50–11:00 NY\n(planned)",
+    "category": "Planned",
+    "definition": "ICT Silver Bullet time window — high-probability FVG fill nested inside NY Open. Not yet explicitly flagged. Planned for silver_smart_money session_frame column expansion.",
+    "long_description": "## Silver Bullet 09:50–11:00 NY (planned)\n\n**Layer:** Planned\n\nICT Silver Bullet time window — high-probability FVG fill nested inside NY Open. Not yet explicitly flagged. Planned for silver_smart_money session_frame column expansion.\n\n**Status:** Not yet built. Included to show future pipeline direction.\n",
+    "to": [],
+    "from": [],
+    "_pagerank": 0.002,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Planned",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "4df7e808",
+    "label": "Accumulation\n(Asia builds range)",
+    "category": "Power3",
+    "definition": "Smart money accumulates positions during Asia session. Asia body range defines the consolidation zone. When asia_raw ≤ 35 pips it becomes the daily anchor_high/anchor_low for all STDV projections. This is the 'A' in Accumulation/Manipulation/Distribution.",
+    "long_description": "## Accumulation (Asia builds range)\n\n**Layer:** Power3\n\nSmart money accumulates positions during Asia session. Asia body range defines the consolidation zone. When asia_raw ≤ 35 pips it becomes the daily anchor_high/anchor_low for all STDV projections. This is the 'A' in Accumulation/Manipulation/Distribution.\n\n**ICT Power of 3:** Accumulation → Manipulation → Distribution. Full cycle typically spans Asia → London → NY sessions.\n",
+    "to": [
+      "6740f7ef"
+    ],
+    "from": [
+      "9fa76d4e"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Power3",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "7d059f48",
+    "label": "Manipulation\n(CBDR / stop hunt)",
+    "category": "Power3",
+    "definition": "Smart money manipulates: London/CBDR breaks or extends Asia range to trigger retail stops. daily_highs/lows_swept_20d (sweep counts) quantifies manipulation intensity. CBDR becomes anchor fallback when Asia > 35 pips. The 'M' in Power of 3.",
+    "long_description": "## Manipulation (CBDR / stop hunt)\n\n**Layer:** Power3\n\nSmart money manipulates: London/CBDR breaks or extends Asia range to trigger retail stops. daily_highs/lows_swept_20d (sweep counts) quantifies manipulation intensity. CBDR becomes anchor fallback when Asia > 35 pips. The 'M' in Power of 3.\n\n**ICT Power of 3:** Accumulation → Manipulation → Distribution. Full cycle typically spans Asia → London → NY sessions.\n",
+    "to": [
+      "6740f7ef"
+    ],
+    "from": [
+      "d4a22e31",
+      "e77b8c51"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Power3",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "1b6fc36c",
+    "label": "Distribution\n(NY delivers to STDV)",
+    "category": "Power3",
+    "definition": "True directional delivery during NY AM session. Price moves from anchor toward STDV targets (tgt_hi_1_0 through tgt_hi_4_0 or tgt_lo_*). silver_stdv_touch_log records which targets were hit and reversal bar confirmations. The 'D' in Power of 3.",
+    "long_description": "## Distribution (NY delivers to STDV)\n\n**Layer:** Power3\n\nTrue directional delivery during NY AM session. Price moves from anchor toward STDV targets (tgt_hi_1_0 through tgt_hi_4_0 or tgt_lo_*). silver_stdv_touch_log records which targets were hit and reversal bar confirmations. The 'D' in Power of 3.\n\n**ICT Power of 3:** Accumulation → Manipulation → Distribution. Full cycle typically spans Asia → London → NY sessions.\n",
+    "to": [
+      "73951d60"
+    ],
+    "from": [
+      "89def822"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Power3",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "98e4bfe1",
+    "label": "5-Day Window",
+    "category": "Lookback",
+    "definition": "5-day rolling window. Used for ddr_adr_5d (short-term ADR for current volatility context in chronos_input).",
+    "long_description": "## 5-Day Window\n\n**Layer:** Lookback\n\n5-day rolling window. Used for ddr_adr_5d (short-term ADR for current volatility context in chronos_input).\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "07db4ac6"
+    ],
+    "from": [
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "f6892e82",
+    "label": "20-Day Window",
+    "category": "Lookback",
+    "definition": "Most-used lookback. ATR_20d, ADR_20d, MA_20d, COT_pct_20d, carry_z_20d, liquidity sweep counts 20d, price_pos_20d, high/low_dist_20d. Foundation of volatility and positioning signals.",
+    "long_description": "## 20-Day Window\n\n**Layer:** Lookback\n\nMost-used lookback. ATR_20d, ADR_20d, MA_20d, COT_pct_20d, carry_z_20d, liquidity sweep counts 20d, price_pos_20d, high/low_dist_20d. Foundation of volatility and positioning signals.\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "bddecb7b",
+      "07db4ac6",
+      "852d3625",
+      "82c8f986",
+      "5620a549",
+      "7c2e0594"
+    ],
+    "from": [
+      "56ec2317",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.10714285714285714,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "50e4508b",
+    "label": "40-Day Window",
+    "category": "Lookback",
+    "definition": "40-day rolling window. ATR_40d, ADR_40d, MA_40d, COT_pct_40d, price_pos_40d, high/low_dist_40d. Medium-term volatility and positioning regime.",
+    "long_description": "## 40-Day Window\n\n**Layer:** Lookback\n\n40-day rolling window. ATR_40d, ADR_40d, MA_40d, COT_pct_40d, price_pos_40d, high/low_dist_40d. Medium-term volatility and positioning regime.\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "bddecb7b",
+      "07db4ac6",
+      "82c8f986",
+      "2a086509"
+    ],
+    "from": [
+      "56ec2317",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.07142857142857142,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "77d462cf",
+    "label": "60-Day Window",
+    "category": "Lookback",
+    "definition": "60-day rolling window. ATR_60d, MA_60d, price_pos_60d, liquidity sweep counts 60d. 60d anchor_range_high/low in silver_smart_money. Seasonal context threshold.",
+    "long_description": "## 60-Day Window\n\n**Layer:** Lookback\n\n60-day rolling window. ATR_60d, MA_60d, price_pos_60d, liquidity sweep counts 60d. 60d anchor_range_high/low in silver_smart_money. Seasonal context threshold.\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "bddecb7b",
+      "5620a549"
+    ],
+    "from": [
+      "56ec2317",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "d3c6f617",
+    "label": "Quarterly Window",
+    "category": "Lookback",
+    "definition": "Quarterly (13-week) rolling window. ATR_Q, price_pos_Q. Presidential and fiscal Q cycle alignment. Q open/high/low features. Quarterly OHLCV pattern context.",
+    "long_description": "## Quarterly Window\n\n**Layer:** Lookback\n\nQuarterly (13-week) rolling window. ATR_Q, price_pos_Q. Presidential and fiscal Q cycle alignment. Q open/high/low features. Quarterly OHLCV pattern context.\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "bddecb7b",
+      "19be692d",
+      "2a086509"
+    ],
+    "from": [
+      "020eb2c0"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.05357142857142857,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "9103cf0f",
+    "label": "1-Year COT Window",
+    "category": "Lookback",
+    "definition": "1-year COT lookback. cot_pct_1yr: rolling percentile of net commercial over 12 months. Key medium-term positioning signal. Part of COT anchor period encoding (5-window cascade).",
+    "long_description": "## 1-Year COT Window\n\n**Layer:** Lookback\n\n1-year COT lookback. cot_pct_1yr: rolling percentile of net commercial over 12 months. Key medium-term positioning signal. Part of COT anchor period encoding (5-window cascade).\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "2a086509"
+    ],
+    "from": [
+      "85121d4b"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "be711c72",
+    "label": "4-Year COT Window",
+    "category": "Lookback",
+    "definition": "4-year (presidential cycle) COT lookback. cot_pct_4yr: long-cycle positioning percentile. Maximum standard window. anchor_points max_long/max_short over 4yr cycle. Seasonal bias aligned to presidential year (1-4).",
+    "long_description": "## 4-Year COT Window\n\n**Layer:** Lookback\n\n4-year (presidential cycle) COT lookback. cot_pct_4yr: long-cycle positioning percentile. Maximum standard window. anchor_points max_long/max_short over 4yr cycle. Seasonal bias aligned to presidential year (1-4).\n\n**Window type:** Rolling lookback applied to price or COT data during silver feature computation.\n",
+    "to": [
+      "2a086509",
+      "19be692d"
+    ],
+    "from": [
+      "85121d4b"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Lookback",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "bddecb7b",
+    "label": "ATR / Volatility\n(4 windows)",
+    "category": "Feature",
+    "definition": "Average True Range family: atr_20d, atr_40d, atr_60d, atr_q. Coiling ratio and EXPANSION/CONTRACTION/COILING state (silver_atr_coiling). atr_ratio_20d (ATR vs ADR). Volatility regime context for all models.",
+    "long_description": "## ATR / Volatility (4 windows)\n\n**Layer:** Feature\n\nAverage True Range family: atr_20d, atr_40d, atr_60d, atr_q. Coiling ratio and EXPANSION/CONTRACTION/COILING state (silver_atr_coiling). atr_ratio_20d (ATR vs ADR). Volatility regime context for all models.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "632d3c46"
+    ],
+    "from": [
+      "f6892e82",
+      "50e4508b",
+      "77d462cf",
+      "d3c6f617",
+      "56ec2317"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "07db4ac6",
+    "label": "ADR / Dealing Range",
+    "category": "Feature",
+    "definition": "Average Daily Range family: adr_5d, adr_20d, adr_40d, adr_60d (true NY-session range). ddr_full_range, ddr_ny_open, ddr_ny_range. Basis for STDV step size: stdv_step = anchor_raw (when anchor source = ASIA/CBDR) or combined/2 (FLOUT). cbdr_pips from CBDR body.",
+    "long_description": "## ADR / Dealing Range\n\n**Layer:** Feature\n\nAverage Daily Range family: adr_5d, adr_20d, adr_40d, adr_60d (true NY-session range). ddr_full_range, ddr_ny_open, ddr_ny_range. Basis for STDV step size: stdv_step = anchor_raw (when anchor source = ASIA/CBDR) or combined/2 (FLOUT). cbdr_pips from CBDR body.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "632d3c46",
+      "6740f7ef"
+    ],
+    "from": [
+      "98e4bfe1",
+      "f6892e82",
+      "50e4508b",
+      "d4a22e31",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "852d3625",
+    "label": "STDV Projection Targets\n(×6 levels)",
+    "category": "Feature",
+    "definition": "Standard Deviation price targets. 12 levels per day: tgt_hi_1_0/1_5/2_0/2_5/3_0/4_0 (upside from anchor_low) + tgt_lo_* (downside from anchor_high). Hierarchy: Asia ≤ 35p → CBDR ≤ 40p → FLOUT → EXCEEDED (ADR/2 fallback). Weekly persistence via LAST_VALUE.",
+    "long_description": "## STDV Projection Targets (×6 levels)\n\n**Layer:** Feature\n\nStandard Deviation price targets. 12 levels per day: tgt_hi_1_0/1_5/2_0/2_5/3_0/4_0 (upside from anchor_low) + tgt_lo_* (downside from anchor_high). Hierarchy: Asia ≤ 35p → CBDR ≤ 40p → FLOUT → EXCEEDED (ADR/2 fallback). Weekly persistence via LAST_VALUE.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "73951d60"
+    ],
+    "from": [
+      "9fa76d4e",
+      "d4a22e31",
+      "f6892e82",
+      "07db4ac6"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "82c8f986",
+    "label": "COT Positioning\n(weekly, 7 pairs)",
+    "category": "Feature",
+    "definition": "CFTC COT rolling features: net_commercial (long minus short), cot_pct_6mo/1yr (rolling percentile). Also: raw non-commercial long/short, OI, extreme_long/extreme_short flags. Updated Fri 20:30 UTC. 54 total COT cols in ml_ready.",
+    "long_description": "## COT Positioning (weekly, 7 pairs)\n\n**Layer:** Feature\n\nCFTC COT rolling features: net_commercial (long minus short), cot_pct_6mo/1yr (rolling percentile). Also: raw non-commercial long/short, OI, extreme_long/extreme_short flags. Updated Fri 20:30 UTC. 54 total COT cols in ml_ready.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "29ab6540"
+    ],
+    "from": [
+      "f6892e82",
+      "50e4508b",
+      "85121d4b"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "2a086509",
+    "label": "COT Anchor Periods\n(40 cols × 5 windows)",
+    "category": "Feature",
+    "definition": "ICT-style anchor period COT encoding. 87 periods per currency (2012→2099), 5 lookback windows (6mo/1yr/4yr/8yr/12yr). Per window: max_long, min_long, mean_net, std_net, current_pct. Range-joined to hourly bars in ml_ready. 40 cols total.",
+    "long_description": "## COT Anchor Periods (40 cols × 5 windows)\n\n**Layer:** Feature\n\nICT-style anchor period COT encoding. 87 periods per currency (2012→2099), 5 lookback windows (6mo/1yr/4yr/8yr/12yr). Per window: max_long, min_long, mean_net, std_net, current_pct. Range-joined to hourly bars in ml_ready. 40 cols total.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "29ab6540"
+    ],
+    "from": [
+      "9103cf0f",
+      "be711c72",
+      "d3c6f617",
+      "85121d4b"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "2eed9293",
+    "label": "ICT Market Structure\n(BOS / CHoCH)",
+    "category": "Feature",
+    "definition": "Smart Money Concepts from silver_smart_money. Per pair/timeframe: swing_high, swing_low, market_structure_bias (bullish/bearish), last_bos_type (BOS/CHoCH), bos_distance_pips. Multi-timeframe joins: same/4h/daily/weekly/monthly in ml_ready.",
+    "long_description": "## ICT Market Structure (BOS / CHoCH)\n\n**Layer:** Feature\n\nSmart Money Concepts from silver_smart_money. Per pair/timeframe: swing_high, swing_low, market_structure_bias (bullish/bearish), last_bos_type (BOS/CHoCH), bos_distance_pips. Multi-timeframe joins: same/4h/daily/weekly/monthly in ml_ready.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "b911a053"
+    ],
+    "from": [
+      "99d77920",
+      "e77b8c51",
+      "89def822",
+      "77d462cf"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "842eff26",
+    "label": "Fair Value Gaps (FVG)",
+    "category": "Feature",
+    "definition": "Imbalance / FVG detection from silver_smart_money. nearest_fvg_high/low, fvg_distance_pips, fvg_type (bullish/bearish), fvg_filled (bool). ICT fair value zone between two candles with a price gap — institutional rebalancing target.",
+    "long_description": "## Fair Value Gaps (FVG)\n\n**Layer:** Feature\n\nImbalance / FVG detection from silver_smart_money. nearest_fvg_high/low, fvg_distance_pips, fvg_type (bullish/bearish), fvg_filled (bool). ICT fair value zone between two candles with a price gap — institutional rebalancing target.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "b911a053"
+    ],
+    "from": [
+      "99d77920"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "d8e78009",
+    "label": "Order Blocks (OB)",
+    "category": "Feature",
+    "definition": "Order block detection from silver_smart_money. nearest_ob_high/low, ob_distance_pips, ob_strength, ob_type (bullish/bearish). Last opposing candle before a BOS — institutional entry and re-entry zone.",
+    "long_description": "## Order Blocks (OB)\n\n**Layer:** Feature\n\nOrder block detection from silver_smart_money. nearest_ob_high/low, ob_distance_pips, ob_strength, ob_type (bullish/bearish). Last opposing candle before a BOS — institutional entry and re-entry zone.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "b911a053"
+    ],
+    "from": [
+      "99d77920"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "5620a549",
+    "label": "Liquidity Sweeps\n(20 / 40 / 60d)",
+    "category": "Feature",
+    "definition": "Draw-on-Liquidity quantification from silver_session_ranges. daily_highs_swept_20d/40d/60d and daily_lows_swept_20d/40d/60d: count of prior daily highs/lows broken today. Single self-join up to 60d with conditional aggregation for all three windows.",
+    "long_description": "## Liquidity Sweeps (20 / 40 / 60d)\n\n**Layer:** Feature\n\nDraw-on-Liquidity quantification from silver_session_ranges. daily_highs_swept_20d/40d/60d and daily_lows_swept_20d/40d/60d: count of prior daily highs/lows broken today. Single self-join up to 60d with conditional aggregation for all three windows.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "6740f7ef"
+    ],
+    "from": [
+      "f6892e82",
+      "77d462cf",
+      "c4b79f41"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "7c2e0594",
+    "label": "Carry Differentials",
+    "category": "Feature",
+    "definition": "Carry trade features from silver_carry_features. pair_carry_diff (policy rate spread), carry_vs_adr (carry/volatility ratio for normalized signal), carry_z_20d, carry_z_90d, carry_momentum_5d/20d. 17 cross pairs, Dataform incremental SQLX.",
+    "long_description": "## Carry Differentials\n\n**Layer:** Feature\n\nCarry trade features from silver_carry_features. pair_carry_diff (policy rate spread), carry_vs_adr (carry/volatility ratio for normalized signal), carry_z_20d, carry_z_90d, carry_momentum_5d/20d. 17 cross pairs, Dataform incremental SQLX.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "a3e0c7f4"
+    ],
+    "from": [
+      "588169c5",
+      "f6892e82"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "f504277c",
+    "label": "Macro / Fundamental\n(18 cols)",
+    "category": "Feature",
+    "definition": "18 macro columns in ml_ready: dgs2/5/10/30 (US yields), t10y2y (yield spread), dfii10 (real yield), us_gdp/cpi/unemployment, fed_funds_rate, dxy_index, gold_price, crude_oil_price, vix_index, gsci_index, futures_volume, futures_settle. Forward-filled daily.",
+    "long_description": "## Macro / Fundamental (18 cols)\n\n**Layer:** Feature\n\n18 macro columns in ml_ready: dgs2/5/10/30 (US yields), t10y2y (yield spread), dfii10 (real yield), us_gdp/cpi/unemployment, fed_funds_rate, dxy_index, gold_price, crude_oil_price, vix_index, gsci_index, futures_volume, futures_settle. Forward-filled daily.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "c9cd0bff",
+      "4425a2ba",
+      "5797257d",
+      "82c8a6e8"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "19be692d",
+    "label": "Seasonal / Cycle Biases",
+    "category": "Feature",
+    "definition": "Temporal cycle features: month, day_of_week, is_quarter_start/end, quarter_number, presidential_cycle_year (1-4), seasonal_bias (monthly directional bias per pair from seasonal_biases table), is_fomc_week, is_nfp_week. Frozen/deterministic — full rebuild only.",
+    "long_description": "## Seasonal / Cycle Biases\n\n**Layer:** Feature\n\nTemporal cycle features: month, day_of_week, is_quarter_start/end, quarter_number, presidential_cycle_year (1-4), seasonal_bias (monthly directional bias per pair from seasonal_biases table), is_fomc_week, is_nfp_week. Frozen/deterministic — full rebuild only.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "f7d1d6a1",
+      "020eb2c0",
+      "d3c6f617",
+      "be711c72"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "e19fa96a",
+    "label": "Weekly State\n(21 cols)",
+    "category": "Feature",
+    "definition": "Friday-bridged weekly context (21 cols in ml_ready): prior_friday_close, friday_close_pos vs ADR, weekly_range vs ADR, weekly_bias (calculated vs actual close direction), friday_cot_extreme_long/short, friday_pct_rank_4w, COT index_4w. Monday context bridge from friday_anchor table.",
+    "long_description": "## Weekly State (21 cols)\n\n**Layer:** Feature\n\nFriday-bridged weekly context (21 cols in ml_ready): prior_friday_close, friday_close_pos vs ADR, weekly_range vs ADR, weekly_bias (calculated vs actual close direction), friday_cot_extreme_long/short, friday_pct_rank_4w, COT index_4w. Monday context bridge from friday_anchor table.\n\n**Feature group:** Cluster of related derived columns computed from raw data and lookback windows.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "020eb2c0",
+      "f6892e82"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Feature",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "632d3c46",
+    "label": "silver_daily_dealing_range",
+    "category": "Silver",
+    "definition": "True NY-session ADR rolling 5/20/40/60d. Day high/low, NY open/range, full session range in pips. Feeds silver_session_ranges stdv_step and ml_ready ddr_* columns. Also a direct input to chronos_input.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 120,906 rows · 16 columns",
+    "long_description": "## silver_daily_dealing_range\n\n**Layer:** Silver\n\n**Rows:** 120,906  |  **Columns:** 16  |  **Last modified:** 2026-04-21 09:05 UTC\n\nTrue NY-session ADR rolling 5/20/40/60d. Day high/low, NY open/range, full session range in pips. Feeds silver_session_ranges stdv_step and ml_ready ddr_* columns. Also a direct input to chronos_input.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "6740f7ef",
+      "7f64aef4",
+      "7560ec96"
+    ],
+    "from": [
+      "bddecb7b",
+      "07db4ac6"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.05357142857142857,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 120906,
+    "_bq_cols": 16,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "6740f7ef",
+    "label": "silver_session_ranges",
+    "category": "Silver",
+    "definition": "86k rows. ICT daily anchor + 12 STDV price targets (tgt_hi/lo 1.0–4.0σ) + cbdr_pips/valid + 6 liquidity sweep counts (20/40/60d). Weekly LAST_VALUE persistence. Joins to ml_ready on pair + session_date.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 129,713 rows · 29 columns",
+    "long_description": "## silver_session_ranges\n\n**Layer:** Silver\n\n**Rows:** 129,713  |  **Columns:** 29  |  **Last modified:** 2026-04-21 09:05 UTC\n\n86k rows. ICT daily anchor + 12 STDV price targets (tgt_hi/lo 1.0–4.0σ) + cbdr_pips/valid + 6 liquidity sweep counts (20/40/60d). Weekly LAST_VALUE persistence. Joins to ml_ready on pair + session_date.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "4df7e808",
+      "7d059f48",
+      "852d3625",
+      "07db4ac6",
+      "5620a549"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 129713,
+    "_bq_cols": 29,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "b911a053",
+    "label": "silver_smart_money",
+    "category": "Silver",
+    "definition": "ICT Smart Money Concepts per pair/timeframe. BOS/CHoCH, swing H/L, FVG, OB, liquidity levels, market_structure_bias, ICT session frame, 60d anchor range, bar pivot. 5 MTF joins in ml_ready (same/4h/daily/weekly/monthly).\n\n**Live BQ stats** (as of 2026-04-21 08:03 UTC): 2,894,953 rows · 29 columns",
+    "long_description": "## silver_smart_money\n\n**Layer:** Silver\n\n**Rows:** 2,894,953  |  **Columns:** 29  |  **Last modified:** 2026-04-21 08:03 UTC\n\nICT Smart Money Concepts per pair/timeframe. BOS/CHoCH, swing H/L, FVG, OB, liquidity levels, market_structure_bias, ICT session frame, 60d anchor range, bar pivot. 5 MTF joins in ml_ready (same/4h/daily/weekly/monthly).\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "2eed9293",
+      "842eff26",
+      "d8e78009"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 2894953,
+    "_bq_cols": 29,
+    "_bq_modified": "2026-04-21 08:03 UTC"
+  },
+  {
+    "id": "73951d60",
+    "label": "silver_stdv_levels",
+    "category": "Silver",
+    "definition": "72-column daily STDV price projection table. tgt_hi/lo 1.0–4.0σ per pair per session_date. Training-time join on pair + DATE(timestamp) = session_date to label which STDV levels price reached intraday.\n\n**Live BQ stats** (as of 2026-03-27 06:00 UTC): 82,655 rows · 72 columns",
+    "long_description": "## silver_stdv_levels\n\n**Layer:** Silver\n\n**Rows:** 82,655  |  **Columns:** 72  |  **Last modified:** 2026-03-27 06:00 UTC\n\n72-column daily STDV price projection table. tgt_hi/lo 1.0–4.0σ per pair per session_date. Training-time join on pair + DATE(timestamp) = session_date to label which STDV levels price reached intraday.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "1b6fc36c",
+      "852d3625"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 82655,
+    "_bq_cols": 72,
+    "_bq_modified": "2026-03-27 06:00 UTC"
+  },
+  {
+    "id": "29ab6540",
+    "label": "silver_cot_extremes",
+    "category": "Silver",
+    "definition": "BQ rolling COT extreme indices over 5 lookback windows (6mo/1yr/4yr/8yr/12yr) per currency. valid_from/valid_to range join with hourly bars → 40 anchor COT cols in ml_ready.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 6,459 rows · 16 columns",
+    "long_description": "## silver_cot_extremes\n\n**Layer:** Silver\n\n**Rows:** 6,459  |  **Columns:** 16  |  **Last modified:** 2026-04-21 09:05 UTC\n\nBQ rolling COT extreme indices over 5 lookback windows (6mo/1yr/4yr/8yr/12yr) per currency. valid_from/valid_to range join with hourly bars → 40 anchor COT cols in ml_ready.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "82c8f986",
+      "2a086509"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 6459,
+    "_bq_cols": 16,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "a3e0c7f4",
+    "label": "silver_carry_features",
+    "category": "Silver",
+    "definition": "Carry z-scores (20d/90d) and momentum (5d/20d) for 17 cross pairs. Dataform incremental SQLX from central_bank_rates. Feeds both ml_ready and chronos_input carry differentials.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 106,950 rows · 8 columns",
+    "long_description": "## silver_carry_features\n\n**Layer:** Silver\n\n**Rows:** 106,950  |  **Columns:** 8  |  **Last modified:** 2026-04-21 09:05 UTC\n\nCarry z-scores (20d/90d) and momentum (5d/20d) for 17 cross pairs. Dataform incremental SQLX from central_bank_rates. Feeds both ml_ready and chronos_input carry differentials.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "7f64aef4",
+      "7560ec96"
+    ],
+    "from": [
+      "7c2e0594"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 106950,
+    "_bq_cols": 8,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "e8ade80d",
+    "label": "event_weekly_profile",
+    "category": "Silver",
+    "definition": "Weekly event impact profile per currency: week_type (NFP/FOMC/CPI/PCE/GDP/quiet), high/medium impact counts, day-of-week event flags. USD + anchor currency context per bar.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 1,682 rows · 24 columns",
+    "long_description": "## event_weekly_profile\n\n**Layer:** Silver\n\n**Rows:** 1,682  |  **Columns:** 24  |  **Last modified:** 2026-04-21 09:05 UTC\n\nWeekly event impact profile per currency: week_type (NFP/FOMC/CPI/PCE/GDP/quiet), high/medium impact counts, day-of-week event flags. USD + anchor currency context per bar.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "7f64aef4"
+    ],
+    "from": [
+      "f504277c"
+    ],
+    "_pagerank": 0.007,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 1682,
+    "_bq_cols": 24,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "7f64aef4",
+    "label": "ml_ready\n(276 cols · 2.4M rows)",
+    "category": "Gold",
+    "definition": "Model-ready table: 276 features, 27 pairs, 2007→present. All silver features forward-filled. OHLCV weekend-nulled. Anti-leakage validated. 16 Dataform joins. Primary input to Keras CNN and TimeGPT.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 2,417,221 rows · 276 columns",
+    "long_description": "## ml_ready (276 cols · 2.4M rows)\n\n**Layer:** Gold\n\n**Rows:** 2,417,221  |  **Columns:** 276  |  **Last modified:** 2026-04-21 09:06 UTC\n\nModel-ready table: 276 features, 27 pairs, 2007→present. All silver features forward-filled. OHLCV weekend-nulled. Anti-leakage validated. 16 Dataform joins. Primary input to Keras CNN and TimeGPT.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "e03aaa75",
+      "66ab2de8"
+    ],
+    "from": [
+      "632d3c46",
+      "6740f7ef",
+      "b911a053",
+      "73951d60",
+      "29ab6540",
+      "a3e0c7f4",
+      "e8ade80d",
+      "f504277c",
+      "19be692d",
+      "e19fa96a"
+    ],
+    "_pagerank": 0.015,
+    "_degree_centrality": 0.03571428571428571,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 2417221,
+    "_bq_cols": 276,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "7560ec96",
+    "label": "chronos_input\n(32 covariates)",
+    "category": "Gold",
+    "definition": "Daily bar table for Chronos Large. 32 past covariates: COT pct, price position, ADR, DDR, MAs, stdv_step, cbdr_pips, weekly_bias, friday_close_pos, dgs2, dxy, gold, oil, fed_funds_rate, pair_carry_diff, carry_vs_adr, risk_proxy. 1040-day context window.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 100,737 rows · 115 columns",
+    "long_description": "## chronos_input (32 covariates)\n\n**Layer:** Gold\n\n**Rows:** 100,737  |  **Columns:** 115  |  **Last modified:** 2026-04-21 09:06 UTC\n\nDaily bar table for Chronos Large. 32 past covariates: COT pct, price position, ADR, DDR, MAs, stdv_step, cbdr_pips, weekly_bias, friday_close_pos, dgs2, dxy, gold, oil, fed_funds_rate, pair_carry_diff, carry_vs_adr, risk_proxy. 1040-day context window.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "e3ae9984"
+    ],
+    "from": [
+      "632d3c46",
+      "a3e0c7f4",
+      "7f64aef4"
+    ],
+    "_pagerank": 0.015,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 100737,
+    "_bq_cols": 115,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "e03aaa75",
+    "label": "Keras CNN Dealer\n(local only · not deployed)",
+    "category": "Planned",
+    "definition": "Keras CNN model files exist locally (production_dealer_master_model_v2_seasonals.h5 + quarterly_patch_20260222.h5 + advanced_cot_cnn_transformer.h5). parallel_inference.py script written. NOT yet deployed as a scheduled Cloud Run job — no production inference running. Planned: 4GB Cloud Run container, SEQ_LEN=60 1h bars, direction/confidence/price_target/volatility_regime output.",
+    "long_description": "## Keras CNN Dealer (local only · not deployed)\n\n**Layer:** Planned\n\nKeras CNN model files exist locally (production_dealer_master_model_v2_seasonals.h5 + quarterly_patch_20260222.h5 + advanced_cot_cnn_transformer.h5). parallel_inference.py script written. NOT yet deployed as a scheduled Cloud Run job — no production inference running. Planned: 4GB Cloud Run container, SEQ_LEN=60 1h bars, direction/confidence/price_target/volatility_regime output.\n\n**Status:** Not yet built. Included to show future pipeline direction.\n",
+    "to": [
+      "98ac6c88"
+    ],
+    "from": [
+      "7f64aef4"
+    ],
+    "_pagerank": 0.002,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Planned",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "e3ae9984",
+    "label": "Chronos 2 Large\n(1–30 day horizon)",
+    "category": "Model",
+    "definition": "Amazon Chronos 2 Large (chronos-t5-large) on L4 GPU. 1040-day context, 30 trading day horizon. 32 past covariates. q10/q50/q90/mean_forecast, trend_direction, trend_strength_pct. 810 rows/run (27 pairs × 30 days). 18.6s inference. LIVE Apr 2026.",
+    "long_description": "## Chronos 2 Large (1–30 day horizon)\n\n**Layer:** Model\n\nAmazon Chronos 2 Large (chronos-t5-large) on L4 GPU. 1040-day context, 30 trading day horizon. 32 past covariates. q10/q50/q90/mean_forecast, trend_direction, trend_strength_pct. 810 rows/run (27 pairs × 30 days). 18.6s inference. LIVE Apr 2026.\n\n**Inference:** Cloud Run job. Reads Gold tables, writes forecast output to BQ.\n",
+    "to": [
+      "77b0fd15"
+    ],
+    "from": [
+      "7560ec96"
+    ],
+    "_pagerank": 0.015,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Model",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "66ab2de8",
+    "label": "TimeGPT (Nixtla)\n(21-day horizon)",
+    "category": "Model",
+    "definition": "Nixtla TimeGPT macro regime model. All 27 pairs in 1 API call. 24 exogenous features, 21-day horizon, level=[80,90]. q10/q50/q90 + trend_direction/strength. Monday 07:45 UTC. LIVE Apr 2026.",
+    "long_description": "## TimeGPT (Nixtla) (21-day horizon)\n\n**Layer:** Model\n\nNixtla TimeGPT macro regime model. All 27 pairs in 1 API call. 24 exogenous features, 21-day horizon, level=[80,90]. q10/q50/q90 + trend_direction/strength. Monday 07:45 UTC. LIVE Apr 2026.\n\n**Inference:** Cloud Run job. Reads Gold tables, writes forecast output to BQ.\n",
+    "to": [
+      "d3401b37"
+    ],
+    "from": [
+      "7f64aef4"
+    ],
+    "_pagerank": 0.015,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Model",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "92de8092",
+    "label": "RL Meta-Learner\n(Sat · planned)",
+    "category": "Planned",
+    "definition": "Planned XGBoost/RL meta-learner. Trains on outcome_evaluation (T-7 predictions vs actuals from Chronos + TimeGPT). Learns: when to trust which model, which feature domains dominate per regime. Saturday-only, gate-gated. Not yet built.",
+    "long_description": "## RL Meta-Learner (Sat · planned)\n\n**Layer:** Planned\n\nPlanned XGBoost/RL meta-learner. Trains on outcome_evaluation (T-7 predictions vs actuals from Chronos + TimeGPT). Learns: when to trust which model, which feature domains dominate per regime. Saturday-only, gate-gated. Not yet built.\n\n**Status:** Not yet built. Included to show future pipeline direction.\n",
+    "to": [],
+    "from": [
+      "98ac6c88",
+      "77b0fd15",
+      "d3401b37"
+    ],
+    "_pagerank": 0.002,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Planned",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "98ac6c88",
+    "label": "model_predictions_v2\n(planned output)",
+    "category": "Planned",
+    "definition": "Planned output table for Keras CNN hourly predictions. Schema defined: direction, confidence, price_target, volatility_regime, bias. MONTH partitioned. Will be written by parallel_inference.py once Keras is deployed as a Cloud Run job.",
+    "long_description": "## model_predictions_v2 (planned output)\n\n**Layer:** Planned\n\nPlanned output table for Keras CNN hourly predictions. Schema defined: direction, confidence, price_target, volatility_regime, bias. MONTH partitioned. Will be written by parallel_inference.py once Keras is deployed as a Cloud Run job.\n\n**Status:** Not yet built. Included to show future pipeline direction.\n",
+    "to": [
+      "92de8092"
+    ],
+    "from": [
+      "e03aaa75"
+    ],
+    "_pagerank": 0.002,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 1.0,
+    "_prerequisite_ratio": 0.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Planned",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "77b0fd15",
+    "label": "chronos_large_forecasts",
+    "category": "Gold",
+    "definition": "Chronos 2 Large 30-day forecasts. 810 rows (27 pairs × 30 horizon days). q10/q50/q90/mean_forecast, trend_direction, trend_strength_pct + 37 covariate cols. DAY partitioned, clustered pair/horizon_day.\n\n**Live BQ stats** (as of 2026-04-21 10:33 UTC): 10,530 rows · 37 columns",
+    "long_description": "## chronos_large_forecasts\n\n**Layer:** Gold\n\n**Rows:** 10,530  |  **Columns:** 37  |  **Last modified:** 2026-04-21 10:33 UTC\n\nChronos 2 Large 30-day forecasts. 810 rows (27 pairs × 30 horizon days). q10/q50/q90/mean_forecast, trend_direction, trend_strength_pct + 37 covariate cols. DAY partitioned, clustered pair/horizon_day.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "92de8092"
+    ],
+    "from": [
+      "e3ae9984"
+    ],
+    "_pagerank": 0.015,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 10530,
+    "_bq_cols": 37,
+    "_bq_modified": "2026-04-21 10:33 UTC"
+  },
+  {
+    "id": "d3401b37",
+    "label": "timegpt_forecasts",
+    "category": "Gold",
+    "definition": "TimeGPT 21-day macro regime forecasts. 27 pairs × 21 days. q10/q50/q90 + trend_direction/strength. DATE partitioned, clustered pair. Monday refresh.\n\n**Live BQ stats** (as of 2026-04-21 10:45 UTC): 1,022 rows · 9 columns",
+    "long_description": "## timegpt_forecasts\n\n**Layer:** Gold\n\n**Rows:** 1,022  |  **Columns:** 9  |  **Last modified:** 2026-04-21 10:45 UTC\n\nTimeGPT 21-day macro regime forecasts. 27 pairs × 21 days. q10/q50/q90 + trend_direction/strength. DATE partitioned, clustered pair. Monday refresh.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "92de8092"
+    ],
+    "from": [
+      "66ab2de8"
+    ],
+    "_pagerank": 0.015,
+    "_degree_centrality": 0.017857142857142856,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 1022,
+    "_bq_cols": 9,
+    "_bq_modified": "2026-04-21 10:45 UTC"
+  }
+]

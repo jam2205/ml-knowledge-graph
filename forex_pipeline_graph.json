@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "76fd3bb5",
+    "label": "raw_price_data",
+    "category": "Bronze",
+    "definition": "OHLCV tick data for 27 forex pairs across 5 timeframes (1h/4h/1day/1week/1month). Source: Twelve Data API via Cloud Run hourly + multiframe schedulers.\n\n**Live BQ stats** (as of 2026-04-21 12:08 UTC): 10,335,096 rows · 19 columns",
+    "long_description": "## raw_price_data\n\n**Layer:** Bronze\n\n**Rows:** 10,335,096  |  **Columns:** 19  |  **Last modified:** 2026-04-21 12:08 UTC\n\nOHLCV tick data for 27 forex pairs across 5 timeframes (1h/4h/1day/1week/1month). Source: Twelve Data API via Cloud Run hourly + multiframe schedulers.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "e904aad7",
+      "27f2ca1b",
+      "8a739d5f",
+      "ac080cac",
+      "58d0736c",
+      "b2db3c47",
+      "747e4466",
+      "a11cbb22"
+    ],
+    "from": [
+      "47d382a3",
+      "53475b33"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.1509433962264151,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 10335096,
+    "_bq_cols": 19,
+    "_bq_modified": "2026-04-21 12:08 UTC"
+  },
+  {
+    "id": "d7ab4e3d",
+    "label": "cot_data",
+    "category": "Bronze",
+    "definition": "CFTC Legacy COT (futures + options) for 7 major currency futures. Non-commercial and commercial long/short positions + net + OI percentiles. Source: CFTC deahistfo{year}.zip + deacom.txt weekly.\n\n**Live BQ stats** (as of 2026-04-19 04:52 UTC): 6,459 rows · 14 columns",
+    "long_description": "## cot_data\n\n**Layer:** Bronze\n\n**Rows:** 6,459  |  **Columns:** 14  |  **Last modified:** 2026-04-19 04:52 UTC\n\nCFTC Legacy COT (futures + options) for 7 major currency futures. Non-commercial and commercial long/short positions + net + OI percentiles. Source: CFTC deahistfo{year}.zip + deacom.txt weekly.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "ea278896",
+      "dda97905"
+    ],
+    "from": [
+      "b36596af"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.03773584905660377,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 6459,
+    "_bq_cols": 14,
+    "_bq_modified": "2026-04-19 04:52 UTC"
+  },
+  {
+    "id": "68c2019c",
+    "label": "world_bond_yields",
+    "category": "Bronze",
+    "definition": "41-column daily yield table. US Treasuries (2/5/10/30y, real, spread), ECB SDW (DE 2/5y), BOC Valet (CA 2/5y), Japan MOF (JP 2/5y), RBA F2 (AU 2/5y), FRED monthly (GB/NZ/CH 3m), 4 cross-spread cols. Source: FRED + ECB + BOC + MOF + RBA APIs.\n\n**Live BQ stats** (as of 2026-04-21 07:01 UTC): 7,051 rows · 41 columns",
+    "long_description": "## world_bond_yields\n\n**Layer:** Bronze\n\n**Rows:** 7,051  |  **Columns:** 41  |  **Last modified:** 2026-04-21 07:01 UTC\n\n41-column daily yield table. US Treasuries (2/5/10/30y, real, spread), ECB SDW (DE 2/5y), BOC Valet (CA 2/5y), Japan MOF (JP 2/5y), RBA F2 (AU 2/5y), FRED monthly (GB/NZ/CH 3m), 4 cross-spread cols. Source: FRED + ECB + BOC + MOF + RBA APIs.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "043c9207"
+    ],
+    "from": [
+      "0444ece9"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 7051,
+    "_bq_cols": 41,
+    "_bq_modified": "2026-04-21 07:01 UTC"
+  },
+  {
+    "id": "29b77fbb",
+    "label": "global_macro_data",
+    "category": "Bronze",
+    "definition": "11-column daily macro table: US GDP/CPI/unemployment, fed_funds_rate, GSCI, commodity_tracking_index, gold/crude/copper prices, DXY, VIX. Source: FRED + Yahoo Finance (^VIX, DJP, DX-Y.NYB).\n\n**Live BQ stats** (as of 2026-04-21 07:15 UTC): 3,664 rows · 13 columns",
+    "long_description": "## global_macro_data\n\n**Layer:** Bronze\n\n**Rows:** 3,664  |  **Columns:** 13  |  **Last modified:** 2026-04-21 07:15 UTC\n\n11-column daily macro table: US GDP/CPI/unemployment, fed_funds_rate, GSCI, commodity_tracking_index, gold/crude/copper prices, DXY, VIX. Source: FRED + Yahoo Finance (^VIX, DJP, DX-Y.NYB).\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "043c9207"
+    ],
+    "from": [
+      "8c7eb9c1"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 3664,
+    "_bq_cols": 13,
+    "_bq_modified": "2026-04-21 07:15 UTC"
+  },
+  {
+    "id": "6a7597b0",
+    "label": "imf_commodity_indices",
+    "category": "Bronze",
+    "definition": "45-column daily commodity index table covering energy, metals, agriculture, and soft commodities. Source: World Bank API, FRED, Yahoo Finance.\n\n**Live BQ stats** (as of 2026-04-21 07:30 UTC): 7,051 rows · 45 columns",
+    "long_description": "## imf_commodity_indices\n\n**Layer:** Bronze\n\n**Rows:** 7,051  |  **Columns:** 45  |  **Last modified:** 2026-04-21 07:30 UTC\n\n45-column daily commodity index table covering energy, metals, agriculture, and soft commodities. Source: World Bank API, FRED, Yahoo Finance.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "043c9207"
+    ],
+    "from": [
+      "1fdd7c6b"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 7051,
+    "_bq_cols": 45,
+    "_bq_modified": "2026-04-21 07:30 UTC"
+  },
+  {
+    "id": "5b1983c9",
+    "label": "forex_factory_calendar",
+    "category": "Bronze",
+    "definition": "High/medium/low impact economic events from Forex Factory + FRED FOMC/CPI/PCE/NFP flags. Used to build weekly event profiles per currency.\n\n**Live BQ stats** (as of 2026-04-13 04:24 UTC): 5,012 rows · 9 columns",
+    "long_description": "## forex_factory_calendar\n\n**Layer:** Bronze\n\n**Rows:** 5,012  |  **Columns:** 9  |  **Last modified:** 2026-04-13 04:24 UTC\n\nHigh/medium/low impact economic events from Forex Factory + FRED FOMC/CPI/PCE/NFP flags. Used to build weekly event profiles per currency.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "6ce6a23f"
+    ],
+    "from": [
+      "e252e6c3"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 5012,
+    "_bq_cols": 9,
+    "_bq_modified": "2026-04-13 04:24 UTC"
+  },
+  {
+    "id": "837a9c77",
+    "label": "central_bank_rates",
+    "category": "Bronze",
+    "definition": "Daily central bank policy rates for major pairs. Basis for carry trade differential calculation across 17 cross pairs.\n\n**Live BQ stats** (as of 2026-03-26 02:07 UTC): 6,310 rows · 21 columns",
+    "long_description": "## central_bank_rates\n\n**Layer:** Bronze\n\n**Rows:** 6,310  |  **Columns:** 21  |  **Last modified:** 2026-03-26 02:07 UTC\n\nDaily central bank policy rates for major pairs. Basis for carry trade differential calculation across 17 cross pairs.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "f5cacb8d"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 6310,
+    "_bq_cols": 21,
+    "_bq_modified": "2026-03-26 02:07 UTC"
+  },
+  {
+    "id": "dda97905",
+    "label": "anchor_points",
+    "category": "Bronze",
+    "definition": "410 ICT-style anchor periods (2012→2099) per currency. Each period records 5-window rolling COT extremes (6mo/1yr/4yr/8yr/12yr): max/min/mean/median/std/current/percentile. Source: Python rolling window encoder on cot_data.\n\n**Live BQ stats** (as of 2026-04-21 07:45 UTC): 410 rows · 62 columns",
+    "long_description": "## anchor_points\n\n**Layer:** Bronze\n\n**Rows:** 410  |  **Columns:** 62  |  **Last modified:** 2026-04-21 07:45 UTC\n\n410 ICT-style anchor periods (2012→2099) per currency. Each period records 5-window rolling COT extremes (6mo/1yr/4yr/8yr/12yr): max/min/mean/median/std/current/percentile. Source: Python rolling window encoder on cot_data.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "d7ab4e3d",
+      "006c6df3"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 410,
+    "_bq_cols": 62,
+    "_bq_modified": "2026-04-21 07:45 UTC"
+  },
+  {
+    "id": "e904aad7",
+    "label": "session_labels",
+    "category": "Silver",
+    "definition": "Base hourly OHLCV table enriched with session flags (London/NY/Asia/CBDR), day-of-week, is_weekend, is_market_open, anchor_currency, quarterly/presidential cycle metadata, seasonal bias. Incremental Dataform table.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 2,417,221 rows · 92 columns",
+    "long_description": "## session_labels\n\n**Layer:** Silver\n\n**Rows:** 2,417,221  |  **Columns:** 92  |  **Last modified:** 2026-04-21 09:05 UTC\n\nBase hourly OHLCV table enriched with session flags (London/NY/Asia/CBDR), day-of-week, is_weekend, is_market_open, anchor_currency, quarterly/presidential cycle metadata, seasonal bias. Incremental Dataform table.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "043c9207",
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5",
+      "29b77fbb"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.03773584905660377,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 2417221,
+    "_bq_cols": 92,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "58d0736c",
+    "label": "silver_williams_r",
+    "category": "Silver",
+    "definition": "Williams %R (14-period) per pair/timeframe. Incremental Dataform table built from raw_price_data. Used as overbought/oversold momentum signal in ml_ready.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 3,242,136 rows · 8 columns",
+    "long_description": "## silver_williams_r\n\n**Layer:** Silver\n\n**Rows:** 3,242,136  |  **Columns:** 8  |  **Last modified:** 2026-04-21 09:05 UTC\n\nWilliams %R (14-period) per pair/timeframe. Incremental Dataform table built from raw_price_data. Used as overbought/oversold momentum signal in ml_ready.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 3242136,
+    "_bq_cols": 8,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "b2db3c47",
+    "label": "silver_atr_coiling",
+    "category": "Silver",
+    "definition": "ATR coiling ratio and market cycle state (EXPANSION/CONTRACTION/COILING) per pair/timeframe. Detects volatility compression before breakout.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 10,334,876 rows · 9 columns",
+    "long_description": "## silver_atr_coiling\n\n**Layer:** Silver\n\n**Rows:** 10,334,876  |  **Columns:** 9  |  **Last modified:** 2026-04-21 09:05 UTC\n\nATR coiling ratio and market cycle state (EXPANSION/CONTRACTION/COILING) per pair/timeframe. Detects volatility compression before breakout.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 10334876,
+    "_bq_cols": 9,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "747e4466",
+    "label": "silver_vwap",
+    "category": "Silver",
+    "definition": "Volume-weighted average price and tap_pip_dist (distance from VWAP in pips). Session-anchored VWAP used as ICT fair value reference.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 2,323,731 rows · 7 columns",
+    "long_description": "## silver_vwap\n\n**Layer:** Silver\n\n**Rows:** 2,323,731  |  **Columns:** 7  |  **Last modified:** 2026-04-21 09:05 UTC\n\nVolume-weighted average price and tap_pip_dist (distance from VWAP in pips). Session-anchored VWAP used as ICT fair value reference.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 2323731,
+    "_bq_cols": 7,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "ea278896",
+    "label": "silver_cot_extremes",
+    "category": "Silver",
+    "definition": "BQ rolling COT extreme indices over 5 lookback windows (6mo/1yr/4yr/8yr/12yr) per currency. Valid_from / valid_to range join with hourly bars in ml_ready.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 6,459 rows · 16 columns",
+    "long_description": "## silver_cot_extremes\n\n**Layer:** Silver\n\n**Rows:** 6,459  |  **Columns:** 16  |  **Last modified:** 2026-04-21 09:05 UTC\n\nBQ rolling COT extreme indices over 5 lookback windows (6mo/1yr/4yr/8yr/12yr) per currency. Valid_from / valid_to range join with hourly bars in ml_ready.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "d7ab4e3d"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 6459,
+    "_bq_cols": 16,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "a11cbb22",
+    "label": "silver_futures_volume",
+    "category": "Silver",
+    "definition": "CME currency futures daily volume, volume_ratio (vs 20d avg), and volume_zscore. Joined to ml_ready by pair + DATE(timestamp).\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 25,058 rows · 9 columns",
+    "long_description": "## silver_futures_volume\n\n**Layer:** Silver\n\n**Rows:** 25,058  |  **Columns:** 9  |  **Last modified:** 2026-04-21 09:05 UTC\n\nCME currency futures daily volume, volume_ratio (vs 20d avg), and volume_zscore. Joined to ml_ready by pair + DATE(timestamp).\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 25058,
+    "_bq_cols": 9,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "f5cacb8d",
+    "label": "silver_carry_features",
+    "category": "Silver",
+    "definition": "Carry trade z-scores (20d/90d) and momentum (5d/20d) for 17 cross pairs derived from central_bank_rates policy rate differentials. Incremental Dataform SQLX.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 106,950 rows · 8 columns",
+    "long_description": "## silver_carry_features\n\n**Layer:** Silver\n\n**Rows:** 106,950  |  **Columns:** 8  |  **Last modified:** 2026-04-21 09:05 UTC\n\nCarry trade z-scores (20d/90d) and momentum (5d/20d) for 17 cross pairs derived from central_bank_rates policy rate differentials. Incremental Dataform SQLX.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "837a9c77"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 106950,
+    "_bq_cols": 8,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "27f2ca1b",
+    "label": "silver_daily_dealing_range",
+    "category": "Silver",
+    "definition": "True NY-session ADR (Average Daily Range) rolling 5/20/40/60d. Day high/low, NY open high/low, full and NY session ranges. Used for STDV volatility targeting.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 120,906 rows · 16 columns",
+    "long_description": "## silver_daily_dealing_range\n\n**Layer:** Silver\n\n**Rows:** 120,906  |  **Columns:** 16  |  **Last modified:** 2026-04-21 09:05 UTC\n\nTrue NY-session ADR (Average Daily Range) rolling 5/20/40/60d. Day high/low, NY open high/low, full and NY session ranges. Used for STDV volatility targeting.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "8a739d5f",
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.03773584905660377,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 120906,
+    "_bq_cols": 16,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "8a739d5f",
+    "label": "silver_session_ranges",
+    "category": "Silver",
+    "definition": "ICT session range hierarchy per day: Asia/CBDR/FLOUT anchor source, anchor high/low, stdv_step, 12 price targets (tgt_hi/lo × 1.0-4.0σ), cbdr_pips/valid, daily high/low sweep counts (20/40/60d). Weekly persistence via LAST_VALUE IGNORE NULLS.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 129,713 rows · 29 columns",
+    "long_description": "## silver_session_ranges\n\n**Layer:** Silver\n\n**Rows:** 129,713  |  **Columns:** 29  |  **Last modified:** 2026-04-21 09:05 UTC\n\nICT session range hierarchy per day: Asia/CBDR/FLOUT anchor source, anchor high/low, stdv_step, 12 price targets (tgt_hi/lo × 1.0-4.0σ), cbdr_pips/valid, daily high/low sweep counts (20/40/60d). Weekly persistence via LAST_VALUE IGNORE NULLS.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5",
+      "27f2ca1b"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 129713,
+    "_bq_cols": 29,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "ac080cac",
+    "label": "silver_smart_money",
+    "category": "Silver",
+    "definition": "ICT Smart Money Concepts per pair/timeframe: swing highs/lows, market structure bias, BOS/CHoCH, nearest FVG/OB/liquidity level with pip distance, ICT session frame, 60d anchor range, bar pivot point. Built by build_ict_pivots.py Cloud Run job (09:30 UTC daily).\n\n**Live BQ stats** (as of 2026-04-21 08:03 UTC): 2,894,953 rows · 29 columns",
+    "long_description": "## silver_smart_money\n\n**Layer:** Silver\n\n**Rows:** 2,894,953  |  **Columns:** 29  |  **Last modified:** 2026-04-21 08:03 UTC\n\nICT Smart Money Concepts per pair/timeframe: swing highs/lows, market structure bias, BOS/CHoCH, nearest FVG/OB/liquidity level with pip distance, ICT session frame, 60d anchor range, bar pivot point. Built by build_ict_pivots.py Cloud Run job (09:30 UTC daily).\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "76fd3bb5",
+      "6b5dbc0f"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 2894953,
+    "_bq_cols": 29,
+    "_bq_modified": "2026-04-21 08:03 UTC"
+  },
+  {
+    "id": "6ce6a23f",
+    "label": "event_weekly_profile",
+    "category": "Silver",
+    "definition": "Weekly event impact profile per currency: week_type (NFP/FOMC/CPI/PCE/GDP/retail/PPI/quiet), high/medium impact counts, day-of-week flags. Full USD history from 2000; anchor currencies from FF data availability.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 1,682 rows · 24 columns",
+    "long_description": "## event_weekly_profile\n\n**Layer:** Silver\n\n**Rows:** 1,682  |  **Columns:** 24  |  **Last modified:** 2026-04-21 09:05 UTC\n\nWeekly event impact profile per currency: week_type (NFP/FOMC/CPI/PCE/GDP/retail/PPI/quiet), high/medium impact counts, day-of-week flags. Full USD history from 2000; anchor currencies from FF data availability.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "5b1983c9"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 1682,
+    "_bq_cols": 24,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "e215cd4c",
+    "label": "friday_anchor",
+    "category": "Silver",
+    "definition": "Prior Friday close state per pair: friday_close, close_pos vs ADR, weekly range vs ADR, weekly_bias, COT extreme flags (extreme_long/short, pct_rank_4w, index_4w), Friday session label, Q/pres cycle metadata. Monday context bridge.\n\n**Live BQ stats** (as of 2026-04-21 09:05 UTC): 20,115 rows · 19 columns",
+    "long_description": "## friday_anchor\n\n**Layer:** Silver\n\n**Rows:** 20,115  |  **Columns:** 19  |  **Last modified:** 2026-04-21 09:05 UTC\n\nPrior Friday close state per pair: friday_close, close_pos vs ADR, weekly range vs ADR, weekly_bias, COT extreme flags (extreme_long/short, pct_rank_4w, index_4w), Friday session label, Q/pres cycle metadata. Monday context bridge.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "e904aad7",
+      "d7ab4e3d"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 20115,
+    "_bq_cols": 19,
+    "_bq_modified": "2026-04-21 09:05 UTC"
+  },
+  {
+    "id": "043c9207",
+    "label": "all_features",
+    "category": "Gold",
+    "definition": "84-column hourly feature table built by build_all_features.py Python pipeline. Joins session_labels, bond yields, macro, ICT pivots, COT, STDV, DDR. Incremental (append-only). Input to Dataform gold rebuild.\n\n**Live BQ stats** (as of 2026-04-21 08:05 UTC): 3,384,101 rows · 84 columns",
+    "long_description": "## all_features\n\n**Layer:** Gold\n\n**Rows:** 3,384,101  |  **Columns:** 84  |  **Last modified:** 2026-04-21 08:05 UTC\n\n84-column hourly feature table built by build_all_features.py Python pipeline. Joins session_labels, bond yields, macro, ICT pivots, COT, STDV, DDR. Incremental (append-only). Input to Dataform gold rebuild.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "a0e5bff5"
+    ],
+    "from": [
+      "e904aad7",
+      "68c2019c",
+      "29b77fbb",
+      "ac080cac"
+    ],
+    "_pagerank": 0.01,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 3384101,
+    "_bq_cols": 84,
+    "_bq_modified": "2026-04-21 08:05 UTC"
+  },
+  {
+    "id": "a0e5bff5",
+    "label": "ml_ready",
+    "category": "Gold",
+    "definition": "273-feature, 27-pair model-ready table (2.4M rows, 2007→present). Full Dataform gold rebuild: 16 silver joins, forward-fill of all ICT/MTF/macro cols, OHLCV weekend nulling, QUALIFY dedup guard. Anti-leakage validated. Primary input to all inference models.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 2,417,221 rows · 276 columns",
+    "long_description": "## ml_ready\n\n**Layer:** Gold\n\n**Rows:** 2,417,221  |  **Columns:** 276  |  **Last modified:** 2026-04-21 09:06 UTC\n\n273-feature, 27-pair model-ready table (2.4M rows, 2007→present). Full Dataform gold rebuild: 16 silver joins, forward-fill of all ICT/MTF/macro cols, OHLCV weekend nulling, QUALIFY dedup guard. Anti-leakage validated. Primary input to all inference models.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "910eb1ef",
+      "d77021fe",
+      "601a3358"
+    ],
+    "from": [
+      "043c9207",
+      "58d0736c",
+      "b2db3c47",
+      "747e4466",
+      "ea278896",
+      "a11cbb22",
+      "dda97905",
+      "e215cd4c",
+      "6ce6a23f",
+      "ac080cac",
+      "27f2ca1b",
+      "8a739d5f"
+    ],
+    "_pagerank": 0.01,
+    "_degree_centrality": 0.05660377358490566,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 2417221,
+    "_bq_cols": 276,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "910eb1ef",
+    "label": "chronos_input",
+    "category": "Gold",
+    "definition": "Daily bar table aggregated from ml_ready. 32 past covariates: COT pct (6mo/1yr/4yr), net_commercial, price position (20/40/60d/q), ADR, DDR, MAs, stdv_step, cbdr_pips, weekly_bias, friday_close_pos, yield spreads (dgs2, dxy), gold/oil prices, fed_funds_rate, pair_carry_diff, carry_vs_adr, risk_proxy. 1040-day context window for Chronos Large.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 100,737 rows · 115 columns",
+    "long_description": "## chronos_input\n\n**Layer:** Gold\n\n**Rows:** 100,737  |  **Columns:** 115  |  **Last modified:** 2026-04-21 09:06 UTC\n\nDaily bar table aggregated from ml_ready. 32 past covariates: COT pct (6mo/1yr/4yr), net_commercial, price position (20/40/60d/q), ADR, DDR, MAs, stdv_step, cbdr_pips, weekly_bias, friday_close_pos, yield spreads (dgs2, dxy), gold/oil prices, fed_funds_rate, pair_carry_diff, carry_vs_adr, risk_proxy. 1040-day context window for Chronos Large.\n\n**Built by:** Dataform gold tag (CREATE OR REPLACE TABLE or incremental). Anti-leakage gated.\n",
+    "to": [
+      "69e8eb20"
+    ],
+    "from": [
+      "a0e5bff5",
+      "837a9c77"
+    ],
+    "_pagerank": 0.01,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.5,
+    "_prerequisite_ratio": 0.5,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gold",
+    "_bq_rows": 100737,
+    "_bq_cols": 115,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "d2d30151",
+    "label": "pipeline_quality_log",
+    "category": "Gate",
+    "definition": "DAY-partitioned quality log. Pre-Dataform gate: validates silver_smart_money pair count=27, all_features freshness <48h, no duplicates, no NULL bias. gate_status=PASS unblocks Dataform gold trigger. gate_status=BLOCKED skips ml_ready rebuild.\n\n**Live BQ stats** (as of 2026-04-21 10:01 UTC): 84 rows · 7 columns",
+    "long_description": "## pipeline_quality_log\n\n**Layer:** Gate\n\n**Rows:** 84  |  **Columns:** 7  |  **Last modified:** 2026-04-21 10:01 UTC\n\nDAY-partitioned quality log. Pre-Dataform gate: validates silver_smart_money pair count=27, all_features freshness <48h, no duplicates, no NULL bias. gate_status=PASS unblocks Dataform gold trigger. gate_status=BLOCKED skips ml_ready rebuild.\n\n**Gate contract:** Exit 0 = PASS (Dataform proceeds). Exit 1 = BLOCKED (Dataform skipped, ml_ready not rebuilt).\n",
+    "to": [
+      "65425874"
+    ],
+    "from": [
+      "1e578a37"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gate",
+    "_bq_rows": 84,
+    "_bq_cols": 7,
+    "_bq_modified": "2026-04-21 10:01 UTC"
+  },
+  {
+    "id": "69e8eb20",
+    "label": "chronos_large_forecasts",
+    "category": "Model",
+    "definition": "Chronos 2 Large (amazon/chronos-t5-large) daily forecasts. 27 pairs × 30 horizon days = 810 rows/run. Columns: q10/q50/q90/mean_forecast, trend_direction, trend_strength_pct. Plus 37 covariate cols from chronos_input. Runs on L4 GPU Cloud Run (europe-west1). DAY partitioned, clustered pair/horizon_day.\n\n**Live BQ stats** (as of 2026-04-21 10:33 UTC): 10,530 rows · 37 columns",
+    "long_description": "## chronos_large_forecasts\n\n**Layer:** Model\n\n**Rows:** 10,530  |  **Columns:** 37  |  **Last modified:** 2026-04-21 10:33 UTC\n\nChronos 2 Large (amazon/chronos-t5-large) daily forecasts. 27 pairs × 30 horizon days = 810 rows/run. Columns: q10/q50/q90/mean_forecast, trend_direction, trend_strength_pct. Plus 37 covariate cols from chronos_input. Runs on L4 GPU Cloud Run (europe-west1). DAY partitioned, clustered pair/horizon_day.\n\n**Inference:** Cloud Run job. Reads Gold tables, writes forecast output to BQ.\n",
+    "to": [
+      "601a3358"
+    ],
+    "from": [
+      "910eb1ef",
+      "2fad1eb0"
+    ],
+    "_pagerank": 0.01,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Model",
+    "_bq_rows": 10530,
+    "_bq_cols": 37,
+    "_bq_modified": "2026-04-21 10:33 UTC"
+  },
+  {
+    "id": "d77021fe",
+    "label": "timegpt_forecasts",
+    "category": "Model",
+    "definition": "Nixtla TimeGPT macro regime forecasts. 27 pairs × 21-day horizon in 1 API call. 24 exogenous features: yields, COT, ADR, STDV, CBDR, MA, carry, CME futures volume, Williams %R, coiling, VWAP, ATR ratio. q10/q50/q90 + trend_direction/strength. DATE partitioned, clustered pair.\n\n**Live BQ stats** (as of 2026-04-21 10:45 UTC): 1,022 rows · 9 columns",
+    "long_description": "## timegpt_forecasts\n\n**Layer:** Model\n\n**Rows:** 1,022  |  **Columns:** 9  |  **Last modified:** 2026-04-21 10:45 UTC\n\nNixtla TimeGPT macro regime forecasts. 27 pairs × 21-day horizon in 1 API call. 24 exogenous features: yields, COT, ADR, STDV, CBDR, MA, carry, CME futures volume, Williams %R, coiling, VWAP, ATR ratio. q10/q50/q90 + trend_direction/strength. DATE partitioned, clustered pair.\n\n**Inference:** Cloud Run job. Reads Gold tables, writes forecast output to BQ.\n",
+    "to": [
+      "601a3358"
+    ],
+    "from": [
+      "a0e5bff5",
+      "54dcce32"
+    ],
+    "_pagerank": 0.01,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Model",
+    "_bq_rows": 1022,
+    "_bq_cols": 9,
+    "_bq_modified": "2026-04-21 10:45 UTC"
+  },
+  {
+    "id": "601a3358",
+    "label": "outcome_evaluation",
+    "category": "Meta",
+    "definition": "BQ view joining T-7 model predictions (Chronos q50/direction + TimeGPT q50/direction + Keras CNN direction) against actual ml_ready outcomes (close at T). Computes direction_correct (bool), mae, direction_confidence_delta. Training signal for RF meta-learner. Only populated when pipeline_quality_log = PASS for trailing 5 days.",
+    "long_description": "## outcome_evaluation\n\n**Layer:** Meta\n\nBQ view joining T-7 model predictions (Chronos q50/direction + TimeGPT q50/direction + Keras CNN direction) against actual ml_ready outcomes (close at T). Computes direction_correct (bool), mae, direction_confidence_delta. Training signal for RF meta-learner. Only populated when pipeline_quality_log = PASS for trailing 5 days.\n\n**Status:** Planned. Runs Saturday only when pipeline_quality_log=PASS for trailing 5 days.\n",
+    "to": [
+      "dcc3a02f"
+    ],
+    "from": [
+      "a0e5bff5",
+      "69e8eb20",
+      "d77021fe",
+      "b7645f87"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Meta",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "dcc3a02f",
+    "label": "rf_calibration",
+    "category": "Meta",
+    "definition": "Weekly XGBoost meta-learner output. Trains on 273 ml_ready features + model predictions → actual outcome labels. Outputs per-pair confidence calibration weights: when to trust Chronos vs TimeGPT, which feature domains dominate in current regime (COT/macro/ICT/session). Stored in BQ, consumed by knowledge graph edge weights. Runs Saturday only when gate=PASS for trailing week.",
+    "long_description": "## rf_calibration\n\n**Layer:** Meta\n\nWeekly XGBoost meta-learner output. Trains on 273 ml_ready features + model predictions → actual outcome labels. Outputs per-pair confidence calibration weights: when to trust Chronos vs TimeGPT, which feature domains dominate in current regime (COT/macro/ICT/session). Stored in BQ, consumed by knowledge graph edge weights. Runs Saturday only when gate=PASS for trailing week.\n\n**Status:** Planned. Runs Saturday only when pipeline_quality_log=PASS for trailing 5 days.\n",
+    "to": [],
+    "from": [
+      "601a3358",
+      "51e35aa3"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Meta",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "2c352faf",
+    "label": "silver_stdv_levels",
+    "category": "Silver",
+    "definition": "72-column daily STDV price projection table. Asia/CBDR/FLOUT anchor source with tgt_hi/lo price targets (1.0–4.0σ) per pair per session date. Used at training time to label which STDV levels price reached intraday.\n\n**Live BQ stats** (as of 2026-03-27 06:00 UTC): 82,655 rows · 72 columns",
+    "long_description": "## silver_stdv_levels\n\n**Layer:** Silver\n\n**Rows:** 82,655  |  **Columns:** 72  |  **Last modified:** 2026-03-27 06:00 UTC\n\n72-column daily STDV price projection table. Asia/CBDR/FLOUT anchor source with tgt_hi/lo price targets (1.0–4.0σ) per pair per session date. Used at training time to label which STDV levels price reached intraday.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [
+      "0ceb6399"
+    ],
+    "from": [
+      "76fd3bb5",
+      "27f2ca1b"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 82655,
+    "_bq_cols": 72,
+    "_bq_modified": "2026-03-27 06:00 UTC"
+  },
+  {
+    "id": "0ceb6399",
+    "label": "silver_stdv_touch_log",
+    "category": "Silver",
+    "definition": "5.97M-row bar-by-bar reversal tracking table. Records confirmed_reversal, bar1/2/3 reversal/move for each STDV level touch. Primary label/target source for STDV reversal prediction models. Join on pair + DATE(timestamp) = session_date.\n\n**Live BQ stats** (as of 2026-03-27 06:00 UTC): 5,965,949 rows · 17 columns",
+    "long_description": "## silver_stdv_touch_log\n\n**Layer:** Silver\n\n**Rows:** 5,965,949  |  **Columns:** 17  |  **Last modified:** 2026-03-27 06:00 UTC\n\n5.97M-row bar-by-bar reversal tracking table. Records confirmed_reversal, bar1/2/3 reversal/move for each STDV level touch. Primary label/target source for STDV reversal prediction models. Join on pair + DATE(timestamp) = session_date.\n\n**Built by:** Dataform incremental SQLX (silver tag) or Cloud Run Python job.\n",
+    "to": [],
+    "from": [
+      "2c352faf",
+      "76fd3bb5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Silver",
+    "_bq_rows": 5965949,
+    "_bq_cols": 17,
+    "_bq_modified": "2026-03-27 06:00 UTC"
+  },
+  {
+    "id": "0fa10aea",
+    "label": "cme_futures_volume",
+    "category": "Bronze",
+    "definition": "Raw CME currency futures daily volume and settlement data. Source for silver_futures_volume (volume_ratio, volume_zscore vs 20d average). 75k rows covering major pairs.\n\n**Live BQ stats** (as of 2026-04-14 22:15 UTC): 75,160 rows · 4 columns",
+    "long_description": "## cme_futures_volume\n\n**Layer:** Bronze\n\n**Rows:** 75,160  |  **Columns:** 4  |  **Last modified:** 2026-04-14 22:15 UTC\n\nRaw CME currency futures daily volume and settlement data. Source for silver_futures_volume (volume_ratio, volume_zscore vs 20d average). 75k rows covering major pairs.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "a11cbb22"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 75160,
+    "_bq_cols": 4,
+    "_bq_modified": "2026-04-14 22:15 UTC"
+  },
+  {
+    "id": "12994453",
+    "label": "seasonal_biases",
+    "category": "Bronze",
+    "definition": "Seasonal bias reference table (84 rows). Month/quarter/presidential cycle directional bias per pair. Used in session_labels and ml_ready seasonal feature columns.\n\n**Live BQ stats** (as of 2026-03-10 08:12 UTC): 84 rows · 3 columns",
+    "long_description": "## seasonal_biases\n\n**Layer:** Bronze\n\n**Rows:** 84  |  **Columns:** 3  |  **Last modified:** 2026-03-10 08:12 UTC\n\nSeasonal bias reference table (84 rows). Month/quarter/presidential cycle directional bias per pair. Used in session_labels and ml_ready seasonal feature columns.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [
+      "e904aad7"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 84,
+    "_bq_cols": 3,
+    "_bq_modified": "2026-03-10 08:12 UTC"
+  },
+  {
+    "id": "9907b1c8",
+    "label": "assert: chronos_input no NULL close",
+    "category": "Gate",
+    "definition": "Dataform assertion (gold tag). Returns rows if chronos_input has any NULL close prices — these break Chronos inference. Must return 0 rows. Fails the Dataform invocation if any nulls found.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 0 rows · 3 columns",
+    "long_description": "## assert: chronos_input no NULL close\n\n**Layer:** Gate\n\nDataform assertion (gold tag). Returns rows if chronos_input has any NULL close prices — these break Chronos inference. Must return 0 rows. Fails the Dataform invocation if any nulls found.\n\n**Gate contract:** Exit 0 = PASS (Dataform proceeds). Exit 1 = BLOCKED (Dataform skipped, ml_ready not rebuilt).\n",
+    "to": [],
+    "from": [
+      "910eb1ef"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gate",
+    "_bq_rows": 0,
+    "_bq_cols": 3,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "225d0b51",
+    "label": "assert: chronos_input freshness",
+    "category": "Gate",
+    "definition": "Dataform assertion (gold tag). Returns rows if EURUSD in chronos_input hasn't been updated within 3 calendar days. Catches silent build failures. Must return 0 rows.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 0 rows · 2 columns",
+    "long_description": "## assert: chronos_input freshness\n\n**Layer:** Gate\n\nDataform assertion (gold tag). Returns rows if EURUSD in chronos_input hasn't been updated within 3 calendar days. Catches silent build failures. Must return 0 rows.\n\n**Gate contract:** Exit 0 = PASS (Dataform proceeds). Exit 1 = BLOCKED (Dataform skipped, ml_ready not rebuilt).\n",
+    "to": [],
+    "from": [
+      "910eb1ef"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gate",
+    "_bq_rows": 0,
+    "_bq_cols": 2,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "393c8996",
+    "label": "assert: ml_ready weekend OHLCV null",
+    "category": "Gate",
+    "definition": "Dataform assertion (gold tag). Returns rows if any weekend bar in ml_ready has a non-null close. Validates that the weekend OHLCV nulling logic in session_labels is intact. Must return 0 rows.\n\n**Live BQ stats** (as of 2026-04-21 09:06 UTC): 0 rows · 5 columns",
+    "long_description": "## assert: ml_ready weekend OHLCV null\n\n**Layer:** Gate\n\nDataform assertion (gold tag). Returns rows if any weekend bar in ml_ready has a non-null close. Validates that the weekend OHLCV nulling logic in session_labels is intact. Must return 0 rows.\n\n**Gate contract:** Exit 0 = PASS (Dataform proceeds). Exit 1 = BLOCKED (Dataform skipped, ml_ready not rebuilt).\n",
+    "to": [],
+    "from": [
+      "a0e5bff5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gate",
+    "_bq_rows": 0,
+    "_bq_cols": 5,
+    "_bq_modified": "2026-04-21 09:06 UTC"
+  },
+  {
+    "id": "123dc819",
+    "label": "ict_rag (planned)",
+    "category": "RAG",
+    "definition": "ICT concept embeddings from YouTube transcript corpus. Vector store of ICT trading concepts (OB, FVG, BOS, STDV, dealing ranges, COT interpretation) queryable by model inference context. Enables LLM macro regime layer to ground predictions in ICT doctrine.",
+    "long_description": "## ict_rag (planned)\n\n**Layer:** RAG\n\nICT concept embeddings from YouTube transcript corpus. Vector store of ICT trading concepts (OB, FVG, BOS, STDV, dealing ranges, COT interpretation) queryable by model inference context. Enables LLM macro regime layer to ground predictions in ICT doctrine.\n\n**Status:** Planned. ICT concept corpus not yet ingested.\n",
+    "to": [],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "RAG",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "0444ece9",
+    "label": "fred-daily (07:00 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Fetches FRED + ECB SDW + BOC Valet + Japan MOF + RBA F2 yield data. Writes 41 cols to world_bond_yields. Mon-Fri 07:00 UTC.",
+    "long_description": "## fred-daily (07:00 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Fetches FRED + ECB SDW + BOC Valet + Japan MOF + RBA F2 yield data. Writes 41 cols to world_bond_yields. Mon-Fri 07:00 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "68c2019c"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "8c7eb9c1",
+    "label": "global-macro-daily (07:30 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Fetches FRED macro + Yahoo Finance (VIX, DJP, DX-Y.NYB, gold, oil, copper). Writes 11 cols to global_macro_data. Mon-Fri 07:30 UTC.",
+    "long_description": "## global-macro-daily (07:30 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Fetches FRED macro + Yahoo Finance (VIX, DJP, DX-Y.NYB, gold, oil, copper). Writes 11 cols to global_macro_data. Mon-Fri 07:30 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "29b77fbb"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "1fdd7c6b",
+    "label": "imf-commodity-daily (08:00 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Fetches 45-col commodity index data from World Bank, FRED, Yahoo Finance. Mon-Fri 08:00 UTC.",
+    "long_description": "## imf-commodity-daily (08:00 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Fetches 45-col commodity index data from World Bank, FRED, Yahoo Finance. Mon-Fri 08:00 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "6a7597b0"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "006c6df3",
+    "label": "anchor-push-daily (08:30 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Pushes anchor_points JSON (410 rows) to BQ WRITE_TRUNCATE. Mon-Fri 08:30 UTC.",
+    "long_description": "## anchor-push-daily (08:30 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Pushes anchor_points JSON (410 rows) to BQ WRITE_TRUNCATE. Mon-Fri 08:30 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "dda97905"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "c25df5c5",
+    "label": "build-all-features (09:00 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job (4Gi/2CPU, 1hr timeout). Python ML feature pipeline —all —incremental. Joins price + bonds + macro + COT + ICT pivots into all_features. Mon-Fri 09:00 UTC.",
+    "long_description": "## build-all-features (09:00 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job (4Gi/2CPU, 1hr timeout). Python ML feature pipeline —all —incremental. Joins price + bonds + macro + COT + ICT pivots into all_features. Mon-Fri 09:00 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "043c9207"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "1e578a37",
+    "label": "validate-pipeline (09:55 UTC)",
+    "category": "Gate",
+    "definition": "Cloud Run job. Pre-Dataform gate: 5 BQ checks (pair count=27, freshness <48h ×2, no duplicates, no NULL bias). Writes PASS/BLOCKED to pipeline_quality_log. Exit 1 blocks Dataform trigger. Mon-Fri 09:55 UTC.",
+    "long_description": "## validate-pipeline (09:55 UTC)\n\n**Layer:** Gate\n\nCloud Run job. Pre-Dataform gate: 5 BQ checks (pair count=27, freshness <48h ×2, no duplicates, no NULL bias). Writes PASS/BLOCKED to pipeline_quality_log. Exit 1 blocks Dataform trigger. Mon-Fri 09:55 UTC.\n\n**Gate contract:** Exit 0 = PASS (Dataform proceeds). Exit 1 = BLOCKED (Dataform skipped, ml_ready not rebuilt).\n",
+    "to": [
+      "d2d30151"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.3333333333333333,
+    "_prerequisite_ratio": 0.6666666666666667,
+    "_reachability_ratio": 0.5,
+    "_layer": "Gate",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "65425874",
+    "label": "dataform-gold-trigger (10:00 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Reads pipeline_quality_log gate. If PASS: triggers dataform-only Cloud Workflow (compile → invoke silver+gold tags). All 16 Dataform actions must SUCCEED including 3 assertions. Mon-Fri 10:00 UTC.",
+    "long_description": "## dataform-gold-trigger (10:00 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Reads pipeline_quality_log gate. If PASS: triggers dataform-only Cloud Workflow (compile → invoke silver+gold tags). All 16 Dataform actions must SUCCEED including 3 assertions. Mon-Fri 10:00 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "a0e5bff5",
+      "910eb1ef",
+      "8a739d5f",
+      "f5cacb8d"
+    ],
+    "from": [
+      "d2d30151"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.07547169811320754,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "2fad1eb0",
+    "label": "chronos-large-daily (10:15 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job on L4 GPU (europe-west1). Reads chronos_input from BQ, runs Chronos 2 Large inference, writes 810 rows (27 pairs × 30 horizon days) to chronos_large_forecasts. Mon-Fri 10:15 UTC. Also runs weekly (Sat 11:00) and seasonal (1st Mon monthly).",
+    "long_description": "## chronos-large-daily (10:15 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job on L4 GPU (europe-west1). Reads chronos_input from BQ, runs Chronos 2 Large inference, writes 810 rows (27 pairs × 30 horizon days) to chronos_large_forecasts. Mon-Fri 10:15 UTC. Also runs weekly (Sat 11:00) and seasonal (1st Mon monthly).\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "69e8eb20"
+    ],
+    "from": [
+      "910eb1ef"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "54dcce32",
+    "label": "timegpt-weekly (Mon 07:45 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job (1Gi, europe-west2). All 27 pairs in 1 Nixtla API call. 24 exogenous features, 21-day horizon, level=[80,90]. Writes to timegpt_forecasts. Monday 07:45 UTC.",
+    "long_description": "## timegpt-weekly (Mon 07:45 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job (1Gi, europe-west2). All 27 pairs in 1 Nixtla API call. 24 exogenous features, 21-day horizon, level=[80,90]. Writes to timegpt_forecasts. Monday 07:45 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "d77021fe"
+    ],
+    "from": [
+      "a0e5bff5"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "b36596af",
+    "label": "cftc-weekly (Sat 16:00 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Downloads CFTC Legacy COT combined file (deacom.txt + year ZIP). Upserts to cot_data via BQ MERGE on (pair, report_date). Saturday 16:00 UTC.",
+    "long_description": "## cftc-weekly (Sat 16:00 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Downloads CFTC Legacy COT combined file (deacom.txt + year ZIP). Upserts to cot_data via BQ MERGE on (pair, report_date). Saturday 16:00 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "d7ab4e3d"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "47d382a3",
+    "label": "price-intraday-poll (01:05-22:05 UTC hourly)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job triggered hourly Mon-Fri. Fetches 1h bars for 27 pairs from Twelve Data API. Upserts to raw_price_data.",
+    "long_description": "## price-intraday-poll (01:05-22:05 UTC hourly)\n\n**Layer:** Scheduler\n\nCloud Run job triggered hourly Mon-Fri. Fetches 1h bars for 27 pairs from Twelve Data API. Upserts to raw_price_data.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "76fd3bb5"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "53475b33",
+    "label": "price-multiframe-poll",
+    "category": "Scheduler",
+    "definition": "Cloud Run job triggered by 3 schedulers: daily (Mon-Fri 22:30 UTC), weekly (Mon 06:00 UTC), monthly (1st of month 06:00 UTC). Fetches 4h/1day/1week/1month bars for 27 pairs.",
+    "long_description": "## price-multiframe-poll\n\n**Layer:** Scheduler\n\nCloud Run job triggered by 3 schedulers: daily (Mon-Fri 22:30 UTC), weekly (Mon 06:00 UTC), monthly (1st of month 06:00 UTC). Fetches 4h/1day/1week/1month bars for 27 pairs.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "76fd3bb5"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "e252e6c3",
+    "label": "forex-factory-daily (06:00 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Scrapes Forex Factory calendar + FRED FOMC/CPI/PCE/NFP events. Writes to forex_factory_calendar. Mon-Fri 06:00 UTC.",
+    "long_description": "## forex-factory-daily (06:00 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Scrapes Forex Factory calendar + FRED FOMC/CPI/PCE/NFP events. Writes to forex_factory_calendar. Mon-Fri 06:00 UTC.\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "5b1983c9"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "51e35aa3",
+    "label": "rf-meta-weekly (Sat, gate-gated)",
+    "category": "Meta",
+    "definition": "Planned Cloud Run job. Runs Saturday after Chronos weekly. Trains XGBoost meta-learner on outcome_evaluation (T-7 predictions vs actuals). Only executes when pipeline_quality_log=PASS for all 5 trailing trading days. Writes confidence calibration to rf_calibration.",
+    "long_description": "## rf-meta-weekly (Sat, gate-gated)\n\n**Layer:** Meta\n\nPlanned Cloud Run job. Runs Saturday after Chronos weekly. Trains XGBoost meta-learner on outcome_evaluation (T-7 predictions vs actuals). Only executes when pipeline_quality_log=PASS for all 5 trailing trading days. Writes confidence calibration to rf_calibration.\n\n**Status:** Planned. Runs Saturday only when pipeline_quality_log=PASS for trailing 5 days.\n",
+    "to": [
+      "dcc3a02f"
+    ],
+    "from": [
+      "601a3358"
+    ],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.8333333333333334,
+    "_prerequisite_ratio": 0.16666666666666663,
+    "_reachability_ratio": 0.5,
+    "_layer": "Meta",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "6b5dbc0f",
+    "label": "build-ict-pivots-daily (09:30 UTC)",
+    "category": "Scheduler",
+    "definition": "Cloud Run job. Runs build_ict_pivots.py (--all --incremental). Detects and stores ICT Smart Money Concepts per pair/timeframe: swing highs/lows, BOS, CHoCH, FVG, Order Blocks, liquidity levels, market structure bias, 60d anchor range, bar pivot point. Writes to silver_smart_money. Mon-Fri 09:30 UTC (after build-all-features, before validate-pipeline).",
+    "long_description": "## build-ict-pivots-daily (09:30 UTC)\n\n**Layer:** Scheduler\n\nCloud Run job. Runs build_ict_pivots.py (--all --incremental). Detects and stores ICT Smart Money Concepts per pair/timeframe: swing highs/lows, BOS, CHoCH, FVG, Order Blocks, liquidity levels, market structure bias, 60d anchor range, bar pivot point. Writes to silver_smart_money. Mon-Fri 09:30 UTC (after build-all-features, before validate-pipeline).\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "ac080cac"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "783ffa4e",
+    "label": "treasury_cot",
+    "category": "Bronze",
+    "definition": "US Treasury and financial futures COT positioning data. Separate from currency futures cot_data — covers Treasury bond futures, equity index futures, and other financial instrument positioning reported by CFTC. Active BQ table in forex_pipeline dataset.",
+    "long_description": "## treasury_cot\n\n**Layer:** Bronze\n\nUS Treasury and financial futures COT positioning data. Separate from currency futures cot_data — covers Treasury bond futures, equity index futures, and other financial instrument positioning reported by CFTC. Active BQ table in forex_pipeline dataset.\n\n**Update cadence:** See scheduler node for trigger details.\n",
+    "to": [],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.0,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.16666666666666666,
+    "_prerequisite_ratio": 0.8333333333333334,
+    "_reachability_ratio": 0.5,
+    "_layer": "Bronze",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "b7645f87",
+    "label": "model_predictions_v2",
+    "category": "Model",
+    "definition": "Parallel inference output table. Two-model fusion: Keras Dealer CNN (direction/confidence/price_target/volatility_regime/bias from SEQ_LEN=60 1h bars) + Perplexity 1.4B 4-bit LLM (RISK_ON/RISK_OFF/NEUTRAL macro regime applied to JPY/CHF crosses). Fusion logic: if models agree → confidence ×1.05; if disagree → Keras direction, confidence ×0.70; if LLM unavailable → Keras alone. MONTH partitioned, europe-west2. Written by parallel_inference.py in 4GB Cloud Run container.",
+    "long_description": "## model_predictions_v2\n\n**Layer:** Model\n\nParallel inference output table. Two-model fusion: Keras Dealer CNN (direction/confidence/price_target/volatility_regime/bias from SEQ_LEN=60 1h bars) + Perplexity 1.4B 4-bit LLM (RISK_ON/RISK_OFF/NEUTRAL macro regime applied to JPY/CHF crosses). Fusion logic: if models agree → confidence ×1.05; if disagree → Keras direction, confidence ×0.70; if LLM unavailable → Keras alone. MONTH partitioned, europe-west2. Written by parallel_inference.py in 4GB Cloud Run container.\n\n**Inference:** Cloud Run job. Reads Gold tables, writes forecast output to BQ.\n",
+    "to": [
+      "601a3358"
+    ],
+    "from": [
+      "a0e5bff5",
+      "f36fd0f5"
+    ],
+    "_pagerank": 0.01,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.6666666666666666,
+    "_prerequisite_ratio": 0.33333333333333337,
+    "_reachability_ratio": 0.5,
+    "_layer": "Model",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  },
+  {
+    "id": "f36fd0f5",
+    "label": "parallel-inference (planned Cloud Run)",
+    "category": "Scheduler",
+    "definition": "Planned Cloud Run job (4GB container, europe-west2). Runs parallel_inference.py after Dataform gold rebuild. Loads Keras CNN (~800MB) + Perplexity 1.4B 4-bit (~700MB). Reads ml_ready 1h bars (SEQ_LEN=60), runs both models, fuses outputs, writes to model_predictions_v2. Not yet scheduled — model files exist locally (production_dealer_master_model_v2_seasonals.h5).",
+    "long_description": "## parallel-inference (planned Cloud Run)\n\n**Layer:** Scheduler\n\nPlanned Cloud Run job (4GB container, europe-west2). Runs parallel_inference.py after Dataform gold rebuild. Loads Keras CNN (~800MB) + Perplexity 1.4B 4-bit (~700MB). Reads ml_ready 1h bars (SEQ_LEN=60), runs both models, fuses outputs, writes to model_predictions_v2. Not yet scheduled — model files exist locally (production_dealer_master_model_v2_seasonals.h5).\n\n**Infrastructure:** Google Cloud Run Job + Cloud Scheduler. europe-west2 region unless noted.\n",
+    "to": [
+      "b7645f87"
+    ],
+    "from": [],
+    "_pagerank": 0.005,
+    "_degree_centrality": 0.018867924528301886,
+    "_betweenness_centrality": 0.0,
+    "_descendant_ratio": 0.0,
+    "_prerequisite_ratio": 1.0,
+    "_reachability_ratio": 0.5,
+    "_layer": "Scheduler",
+    "_bq_rows": 0,
+    "_bq_cols": 0,
+    "_bq_modified": ""
+  }
+]

@@ -15,6 +15,7 @@ const DEFAULT_CATEGORY_COLOR = { h: 0.54, s: 0.78, l: 0.58 };
 // Bronze=#CD7F32  Silver=#A8B8C8  Gold=#FFD700  Scheduler=#6B9BD2
 // Gate=#E8734A    Model=#9B59B6   Meta=#E74C3C  RAG=#1ABC9C
 const PIPELINE_CATEGORY_HEX = {
+  // Architecture graph
   'Bronze':    '#CD7F32',
   'Silver':    '#A8B8C8',
   'Gold':      '#FFD700',
@@ -23,6 +24,13 @@ const PIPELINE_CATEGORY_HEX = {
   'Model':     '#9B59B6',
   'Meta':      '#E74C3C',
   'RAG':       '#1ABC9C',
+  // Feature lineage graph (additional categories)
+  'Timeframe': '#27AE60',
+  'Session':   '#F39C12',
+  'Power3':    '#C0392B',
+  'Lookback':  '#2980B9',
+  'Feature':   '#8E44AD',
+  'Planned':   '#7F8C8D',
 };
 
 function hexToHsl(hex) {
